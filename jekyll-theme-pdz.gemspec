@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-pdz"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["PowerShell du Zèro", "Thomas ILLIET"]
   spec.email         = ["contact@powershell-du-zero.fr"]
 

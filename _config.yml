@@ -1,7 +1,83 @@
-title: PDZ theme
-description: PDZ is a a modern flat theme for Jenkin
-theme: jekyll-theme-pdz
-avatar: /assets/img/ps-logo.png
+# Site settings
+title: PowerShell du Zéro
+shortname: PDZ
+description: Jekyll theme for my organization
+keyword: jekyll, jekyll-theme, jekyll-blog
 
+# if you don't need baseurl, you should leave this value blank.
+baseurl: 'https://powershell-du-zero.github.io/jekyll-theme-pdz/'
+
+# Github settings
+github:
+  repository_url: https://github.com/Powershell-du-Zero/Blog
+  branch: master
+
+# Navigation menu settings
 topnav:
-  home: '/'
+  home: /
+
+# Footer
+footer:
+  since: 2018
+
+# Author
+author: Thomas ILLIET
+bio: I’m a Craftsman! I started my journey as a sysadmin. More specificly a Windows sysadmin
+avatar: https://media.licdn.com/dms/image/C4E03AQHZRNTrn7YFLQ/profile-displayphoto-shrink_200_200/0?e=1555545600&v=beta&t=y_giNqdwz1ESTqY9o6cykWTxUxnTe3ZOwB3KI9ZSPxo
+
+# Search
+search: true
+
+# Comments
+comments:
+  disqus: false
+  disqus_url: 
+
+# theme color
+theme-color: default
+
+# Post header background patterns (when the post no cover):
+# - circuitBoard
+# - overlappingCircles
+# - food
+# - glamorous
+# - ticTacToe
+# - seaOfClouds
+postPatterns: circuitBoard
+
+# Tags
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Fill in your Google Analytics ID to track your website using GA
+google_analytics: UA-133213587-4
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+# Do not publish future posts
+future: false
+
+# RSS
+RSS: true
+
+# Permalink
+permalink: /:year/:month/:day/:title.html
+
+# Assets Settings
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Paginate settings
+paginate: 6
+paginate_path: 'page:num'
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed

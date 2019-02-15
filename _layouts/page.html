@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div
+    class="g-banner pages-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}">
+    <h2>{{ page.title }}</h2>
+</div>
+
+<div class="post-content">
+    <article class="markdown-body">
+        {{ content }}
+    </article>
+</div>
+
+<section class="author-detail">
+    <section class="post-footer-item author-card">
+        <div class="avatar">
+            <img src="{{ site.avatar | absolute_url }}" alt="">
+        </div>
+        <div class="author-name" rel="author">{{ site.author }}</div>
+        <div class="bio">
+            <p>{{ site.bio }}</p>
+        </div>
+        {% if site.data.social.size > 0 %}
+        <ul id="social-links" class="social-links">
+            {% for social in site.data.social %}
+            <li>
+                <a href="{{ social[1].link }}" target="_blank">
+                    <i class="{{ social[1].icon }}"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </section>
+    <section class="post-footer-item read-next">
+        {% if page.next.url %}
+        <div class="read-next-item">
+            <a href="{{ page.next.url }}" class="read-next-link"></a>
+            <section>
+                <span>{{ page.next.title }}</span>
+                <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+            </section>
+            {% if page.next.preview-cover %}
+            <div class="filter"></div>
+            <img src="{{ page.next.preview-cover }}" alt="{{ page.next.title }}">
+            {% elsif page.next.post-cover %}
+            <div class="filter"></div>
+            <img src="{{ page.next.post-cover }}" alt="{{ page.next.title }}">
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {% if page.previous.url %}
+        <div class="read-next-item">
+            <a href="{{ page.previous.url }}" class="read-next-link"></a>
+            <section>
+                <span>{{ page.previous.title }}</span>
+                <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+            </section>
+            {% if page.previous.preview-cover %}
+            <div class="filter"></div>
+            <img src="{{ page.previous.preview-cover }}" alt="{{ page.previous.title }}">
+            {% elsif page.previous.post-cover %}
+            <div class="filter"></div>
+            <img src="{{ page.previous.post-cover }}" alt="{{ page.previous.title }}">
+            {% endif %}
+        </div>
+        {% endif %}
+    </section>
+    {% if site.comments.disqus %}
+    <section class="post-footer-item comment">
+        <div id="disqus_thread"></div>
+    </section>
+    {% endif %}
+</section>
+
+{% include footer.html %}
+
+{% if site.comments.disqus %}
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '{{ site.comments.disqus_url }}';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+{% endif %}

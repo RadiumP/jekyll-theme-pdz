@@ -1,0 +1,82 @@
+// color
+$color-catalog-active-background: #f5f5f5;
+
+// font-color
+$color-catalog-default-link: #a6a6a6;
+$color-catalog-active-link: #0085a1;
+
+// ++++++++++++++++++++++
+// Mixins
+// ++++++++++++++++++++++
+.post-content > .markdown-body {
+  img + em {
+    display: block;
+    margin-top: -16px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1310px) {
+
+  .catalog-container {
+    display: none;
+    padding: 0 20px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: calc(50% - 400px);
+    z-index: 100;
+
+    &.fixed {
+      position: fixed;
+    }
+
+    .side-catalog {
+      position: relative;
+
+      .catalog-title {
+        padding: 30px 0;
+      }
+
+      .catalog-body {
+        li {
+          position: relative;
+
+          a {
+            color: $color-catalog-default-link;
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            max-width: 100%;
+            overflow: hidden;
+            padding-left: 10px;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            vertical-align: middle;
+            white-space: nowrap;
+          }
+
+          &.active {
+            background-color: $color-catalog-active-background;
+            border-radius: 4px;
+
+            a {
+              color: $color-catalog-active-link !important;
+            }
+          }
+          @for $i from 1 through 4 {
+            &.h#{$i}_nav {
+              left: 10px * ($i - 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1310px) {
+  .catalog-container {
+    display: none !important;
+  }
+}

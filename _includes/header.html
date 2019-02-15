@@ -1,0 +1,34 @@
+<header class="g-header">
+    <div class="g-logo">
+        <a href="{{ "/" | relative_url }}"></a>
+    </div>
+    <nav class="g-nav">
+        <ul>
+            {% for link in site.data.topnav %}
+            {% if link[1].first %}
+            <li class='has-sub'>
+                <a href='#'>{{ link[0] }}</a>
+                <ul>
+                    {% for childlink in link[1] %}
+                    {% for linkparts in childlink %}
+                    {% if linkparts[1].first %}
+                        <li class='has-sub' >
+                            <a href='#'>{{ linkparts[0] }}</a>
+                            <ul>
+                            {% for subchildlink in linkparts[1] %}
+                            {% for sublinkparts in subchildlink %}
+                            <li><a href='{{ sublinkparts[1] }}'>{{ sublinkparts[0] }}</a></li>
+                            {% endfor %}{% endfor %}
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li><a href='{{ linkparts[1] }}'>{{ linkparts[0] }}</a></li>
+                    {% endif %}{% endfor %}{% endfor %}
+                </ul>
+            </li>
+            {% else %}
+            <li><a href='{{ link[1] }}'>{{ link[0] }}</a></li>
+            {% endif %}{% endfor %}
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+{% include post-head.html %}
+
+<body>
+    {% include header.html %}
+
+    <header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}"
+        data-theme="{{ site.theme-color }}">
+        <div class="post-wrapper">
+            <div class="post-tags">
+                {% if page.tags.size > 0 %}
+                {% for tag in page.tags %}
+                <a href="{{ '/tags.html#' | append: tag  }}" class="post-tag">{{ tag | url_decode}}</a>
+                {% endfor %}
+                {% endif %}
+            </div>
+            <h1>{{ page.title }}</h1>
+            {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+            <div class="post-meta">
+                {% if page.author %}
+                <span class="post-meta-item"><i class="far fa-user-circle"></i>
+                    {% for author in page.author %}
+                    <a href="{{ "contributors.html#" | append: author | replace: ' ', '-' | downcase | absolute_url }}">{{ author }}</a>
+                    {% if forloop.last == false %}, {% endif %}
+                    {% endfor %}
+                </span>
+                {% else %}
+                <span class="post-meta-item"><i class="far fa-user-circle"></i>{{ site.author }}</span>
+                {% endif %}
+                <span class="post-meta-item"><i class="far fa-clock"></i>
+                    <time datetime="{{ page.date | date:"%y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+                </span>
+                <span class="post-meta-item">
+                    <a href="{{ site.github.repository_url }}/blob/{{ site.github.branch }}/{{ page.path }}">
+                        <i class="fab fa-github"></i> Modifier cette page
+                    </a>
+                </span>
+            </div>
+        </div>
+        {% if page.post-cover %}
+        <div class="filter"></div>
+        <div class="post-cover" style="background: url('{{ page.post-cover }}') center no-repeat; background-size: cover;"></div>
+        {% endif %}
+    </header>
+
+    <div class="post-content visible">
+        <div class="catalog-container">
+            <div class="side-catalog">
+                <h3 class="catalog-title">
+                    <a class="catalog-toggle" href="#">Dans cet article</a>
+                </h3>
+                <ul class="catalog-body"></ul>
+            </div>
+        </div>
+        {% if page.subtitle %}
+        <h2 class="post-subtitle">{{ page.subtitle }}</h2>
+        {% endif %}
+        <article class="markdown-body">
+            {{ page.content }}
+        </article>
+    </div>
+
+    <section class="author-detail">
+        <section class="post-footer-item author-card">
+            <div class="avatar">
+                <img src="{{ site.avatar | absolute_url }}" alt="">
+            </div>
+            <div class="author-name" rel="author">{{ site.author }}</div>
+            <div class="bio">
+                <p>{{ site.bio }}</p>
+            </div>
+            {% if site.data.social.size > 0 %}
+            <ul id="social-links" class="social-links">
+                {% for social in site.data.social %}
+                <li>
+                    <a href="{{ social[1].link }}" target="_blank">
+                        <i class="{{ social[1].icon }}"></i>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </section>
+        <section class="post-footer-item read-next">
+            {% if page.next.url %}
+            <div class="read-next-item">
+                <a href="{{ page.next.url }}" class="read-next-link"></a>
+                <section>
+                    <span>{{ page.next.title }}</span>
+                    <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+                </section>
+                {% if page.next.preview-cover %}
+                <div class="filter"></div>
+                <img src="{{ page.next.preview-cover }}" alt="{{ page.next.title }}">
+                {% elsif page.next.post-cover %}
+                <div class="filter"></div>
+                <img src="{{ page.next.post-cover }}" alt="{{ page.next.title }}">
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {% if page.previous.url %}
+            <div class="read-next-item">
+                <a href="{{ page.previous.url }}" class="read-next-link"></a>
+                <section>
+                    <span>{{ page.previous.title }}</span>
+                    <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+                </section>
+                {% if page.previous.preview-cover %}
+                <div class="filter"></div>
+                <img src="{{ page.previous.preview-cover }}" alt="{{ page.previous.title }}">
+                {% elsif page.previous.post-cover %}
+                <div class="filter"></div>
+                <img src="{{ page.previous.post-cover }}" alt="{{ page.previous.title }}">
+                {% endif %}
+            </div>
+            {% endif %}
+        </section>
+        {% if site.comments.disqus %}
+        <section class="post-footer-item comment">
+            <div id="disqus_thread"></div>
+        </section>
+        {% endif %}
+    </section>
+
+    {% include footer.html %}
+
+    {% if site.comments.disqus %}
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = '{{ site.comments.disqus_url }}';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    {% endif %}
+
+    <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/index.min.js"></script>
+    <script src="/assets/js/nav.min.js"></script>
+    <script>
+        function generateCatalog (selector) {
+            // init
+            var P = $('.markdown-body'),a,n,t,l,i,c;
+            a = P.find('h1,h2,h3,h4,h5,h6');
+
+            // clean
+            $(selector).html('')
+
+            // appending
+            a.each(function () {
+                n = $(this).prop('tagName').toLowerCase();
+                i = "#"+$(this).prop('id');
+                t = $(this).text();
+                c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+                l = $('<li class="'+n+'_nav"></li>').append(c);
+                $(selector).append(l);
+            });
+            return true;
+        }
+
+        generateCatalog(".catalog-body");
+
+        // toggle side catalog
+        $(".catalog-toggle").click((function(e){
+            e.preventDefault();
+            $('.side-catalog').toggleClass("fold")
+        }))
+
+        // support padding
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    </script>
+</body>
+</html>

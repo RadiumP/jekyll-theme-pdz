@@ -1,0 +1,423 @@
+@media screen and (min-width: 1920px) {
+  .home-banner {
+    height: 600px;
+
+    h2 {
+      font-size: 42px;
+      padding-top: 260px;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: $g-container-w) {
+  .g-container {
+    width: auto;
+  }
+
+  .article-list {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .g-sidebar,
+  .search-card,
+  .slack-card {
+    display: none;
+  }
+
+  .pagination  {
+    .page-num {
+      display: none;
+    }
+
+    .page-link {
+      width: 56px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post-wrapper, .markdown-body, .read-next {
+    width: 92%;
+  }
+
+  .post-content {
+    .post-subtitle {
+      width: 92%;
+    }
+  }
+
+  .author-detail {
+    .author-card {
+      width: 92%;
+    }
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .g-header {
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+
+    .fa-bars {
+      display: block;
+      padding: 0px 10px 8px 10px;
+    }
+
+    .g-nav {
+      background-color: #fff;
+      float: left;
+      margin-top: 20px;
+      width: 100%;
+
+      & #menu-button {
+        margin-top: -70px;
+      }
+
+      & ul {
+        display: none;
+        width: 100%;
+
+        & li {
+          display: block;
+          float: none;
+        }
+
+        & li,
+        & ul li,
+        & li:hover > ul > li {
+          border-top: 1px solid rgba(120, 120, 120, 0.15);
+          height: auto;
+          width: 100%;
+        }
+
+        & li a,
+        & ul li a {
+          width: 100%;
+        }
+
+        & ul li a {
+          background: none;
+          color: rgb(102, 102, 102);
+          font-size: 12px;
+          padding: 20px 20px 20px 30px;
+        }
+
+        & ul li:hover > a,
+        & ul li a:hover {
+          color: $color-theme-default;
+        }
+
+        & ul ul li a {
+          padding-left: 40px;
+        }
+
+        & ul,
+        & ul ul {
+          left: 0;
+          margin: 0;
+          position: relative;
+          right: auto;
+          width: 100%;
+        }
+      }
+
+      & > ul > li {
+        display: block;
+        float: none;
+
+        & > a {
+          padding: 20px;
+        }
+      }
+
+      & > ul > li.has-sub > a::after,
+      & ul ul li.has-sub > a::after {
+        display: none;
+      }
+
+      & .submenu-button {
+        border-left: 1px solid rgba(120, 120, 120, 0.15);
+        cursor: pointer;
+        display: block;
+        height: 52px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 52px;
+        z-index: 10;
+      }
+
+      & .submenu-button::after {
+        background: #000000;
+        content: '';
+        display: block;
+        height: 11px;
+        left: 26px;
+        position: absolute;
+        top: 21px;
+        width: 1px;
+        z-index: 99;
+      }
+
+      & .submenu-button::before {
+        background: #000000;
+        content: '';
+        display: block;
+        height: 1px;
+        left: 21px;
+        position: absolute;
+        top: 26px;
+        width: 11px;
+        z-index: 99;
+      }
+
+      & .submenu-button.submenu-opened:after {
+        display: none;
+      }
+    }
+  }
+
+  .author-detail {
+    .author-card {
+      .social-links {
+        margin-top: 24px;
+
+        li {
+          height: 36px;
+          width: 36px;
+
+          .iconfont {
+            font-size: 32px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+
+    .comment {
+      width: 90%;
+    }
+  }
+
+  .read-next {
+    display: block;
+  }
+
+  .read-next-item {
+    margin-bottom: 16px;
+
+    &:first-child {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      box-shadow: none;
+      top: 0;
+    }
+
+    section {
+      margin-left: 5%;
+      margin-top: 45px;
+      width: 90%;
+    }
+  }
+
+  .g-banner {
+    padding: 0 20px;
+  }
+
+  .home-banner,
+  .pages-banner {
+    h3 {
+      margin-top: 8px;
+    }
+  }
+
+  .home-content {
+    margin-top: 0;
+  }
+
+  .article-list,
+  .pages-content {
+    width: 100%;
+  }
+
+  .pages-content {
+    margin-top: 0;
+  }
+
+  .pages-banner {
+    height: 300px;
+  }
+
+  .pages-list {
+    padding: 0 0 24px;
+  }
+
+  .g-footer {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-banner {
+    height: 400px;
+
+    h2 {
+      font-size: 28px;
+      line-height: 48px;
+      padding-top: 180px;
+    }
+
+    h3 {
+      font-size: 18px;
+      letter-spacing: 6px;
+      margin-top: 2px;
+    }
+  }
+
+  .home-content {
+    margin-bottom: 32px;
+  }
+
+  .article-list {
+    .article-item {
+      border-left: 0;
+      border-radius: 0;
+      border-right: 0;
+      box-shadow: 0;
+      margin-bottom: 8px;
+      padding: 20px 16px;
+
+      &:first-child {
+        border-top: 0;
+      }
+
+      .post-cover {
+        max-height: 200px;
+      }
+
+      .post-preview {
+        .post-title {
+          font-size: 18px;
+          line-height: 26px;
+        }
+
+        .post-subtitle {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      .post-meta {
+        margin-top: 12px;
+
+        .post-tags {
+          display: none;
+        }
+
+        .post-date {
+          float: left;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    .page-links {
+      box-shadow: none;
+    }
+  }
+
+  .post-header {
+    height: 360px;
+    padding: 0;
+  }
+
+  .post-wrapper {
+    .post-tags {
+      margin: 100px 0 8px;
+    }
+
+    h1 {
+      font-family: 'Helvetica Neue', Helvetica, Arial, 'Pingfang SC', 'Microsoft Yahei', Sans-serif;
+    }
+
+    .post-meta {
+      margin-top: 16px;
+    }
+  }
+
+  .post-content {
+    padding-top: 20px;
+
+    .post-subtitle {
+      margin-bottom: 32px;
+      padding: 8px 0 24px;
+
+      &::before {
+        height: 0;
+      }
+    }
+  }
+
+  .markdown-body {
+    p,
+    ul>li {
+      -moz-osx-font-smoothing: auto;
+      -webkit-font-smoothing: auto;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    h1, h2, h3, h4 {
+      margin-top: 24px;
+    }
+
+    table {
+      margin: 16px auto;
+    }
+
+    img {
+      margin: 0 auto 16px;
+    }
+
+    strong {
+      font-weight: 400;
+    }
+
+    blockquote {
+      p {
+        color: #888;
+        font-size: 18px;
+        letter-spacing: 1px;
+        word-break: break-all;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .home-banner {
+    h2 {
+      font-size: 26px;
+      line-height: 38px;
+    }
+
+    h3 {
+      font-size: 16px;
+      margin-top: 4px;
+    }
+  }
+}

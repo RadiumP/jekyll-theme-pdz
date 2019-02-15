@@ -3,9 +3,10 @@ title: PowerShell du Zéro
 shortname: PDZ
 description: Jekyll theme for my organization
 keyword: jekyll, jekyll-theme, jekyll-blog
+url : 'https://powershell-du-zero.github.io/jekyll-theme-pdz/'
 
 # if you don't need baseurl, you should leave this value blank.
-baseurl: 'https://powershell-du-zero.github.io/jekyll-theme-pdz/'
+baseurl: '/jekyll-theme-pdz'
 
 # Github settings
 github:

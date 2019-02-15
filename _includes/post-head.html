@@ -8,7 +8,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ page.url | prepend: site.baseurl }}">
+    <meta property="og:url" content="{{ '/' | absolute_url }}">
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:image" content="{% if page.preview-cover %}{{page.preview-cover}}{% elsif page.post-cover %}{{page.post-cover}}{% endif %}" />
@@ -19,13 +19,13 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="{{ site.shortname }}">
-    <link rel="apple-touch-icon" href="/assets/img/ps-logo-apple.png" />
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/normalize.min.css">
+    <link rel="apple-touch-icon" href="{{ '/' | relative_url }}assets/img/ps-logo-apple.png" />
+    <link rel="stylesheet" href="{{ '/' | relative_url }}assets/css/styles.css">
+    <link rel="stylesheet" href="{{ '/' | relative_url }}assets/css/normalize.min.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_roc50gemkxpw4s4i.css">
-    <link rel="stylesheet" href="/assets/css/github-markdown.css">
-    <link rel="stylesheet" href="/assets/css/prism.css">
-    <link rel="stylesheet" href="/assets/css/fontawesome.css">
-    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="{{ '/' | relative_url }}assets/css/github-markdown.css">
+    <link rel="stylesheet" href="{{ '/' | relative_url }}assets/css/prism.css">
+    <link rel="stylesheet" href="{{ '/' | relative_url }}assets/css/fontawesome.css">
+    <script src="{{ '/' | relative_url }}assets/js/jquery-3.3.1.min.js"></script>
     {% include anchor.html %}
 </head>

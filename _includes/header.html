@@ -17,17 +17,17 @@
                             <ul>
                             {% for subchildlink in linkparts[1] %}
                             {% for sublinkparts in subchildlink %}
-                            <li><a href='{{ sublinkparts[1] }}'>{{ sublinkparts[0] }}</a></li>
+                            <li><a href='{{ sublinkparts[1] | relative_url }}'>{{ sublinkparts[0] }}</a></li>
                             {% endfor %}{% endfor %}
                             </ul>
                         </li>
                     {% else %}
-                        <li><a href='{{ linkparts[1] }}'>{{ linkparts[0] }}</a></li>
+                        <li><a href='{{ linkparts[1] | relative_url }}'>{{ linkparts[0] }}</a></li>
                     {% endif %}{% endfor %}{% endfor %}
                 </ul>
             </li>
             {% else %}
-            <li><a href='{{ link[1] }}'>{{ link[0] }}</a></li>
+            <li><a href='{{ link[1] | relative_url }}'>{{ link[0] }}</a></li>
             {% endif %}{% endfor %}
         </ul>
     </nav>

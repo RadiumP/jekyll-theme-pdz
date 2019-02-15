@@ -2,3 +2,6 @@ title: PDZ theme
 description: PDZ is a a modern flat theme for Jenkin
 theme: jekyll-theme-pdz
 avatar: /assets/img/ps-logo.png
+
+topnav:
+  home: '/'

@@ -16,12 +16,12 @@ layout: default
             {% if post.preview-cover %}
             <div class="post-cover">
                 <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}"></a>
-                <img src="{{ post.preview-cover }}" href="{{ post.url | relative_url }}" alt="">
+                <img src="{{ post.preview-cover }}" href="{{ post.url | relative_url }}" alt="preview-cover">
             </div>
             {% elsif post.post-cover %}
             <div class="post-cover">
                 <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}"></a>
-                <img src="{{ post.post-cover }}" href="{{ post.url | relative_url }}" alt="">
+                <img src="{{ post.post-cover }}" href="{{ post.url | relative_url }}" alt="post-cover">
             </div>
             {% endif %}
             <section class="post-preview">

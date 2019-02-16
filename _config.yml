@@ -18,17 +18,27 @@ footer:
   since: 2018
 
 # Author
-author: Thomas ILLIET
-bio: I spent the first part of my career in technology avoiding programming. Since then, I’ve had a change of heart and started down the DevOps path. I quickly figured out coding is where I belong, I no longer consider my job a job. I’m a craftsman! 
-avatar: assets/img/logo.png
+author:
+  name: Thomas ILLIET
+  avatar: demo/img/avatar-thomas-illiet.jpg
+  bio: DevOps Engineer | Speaker | Blogger | PowerShell Advocate
+  social:
+    twitter:
+      icon: fab fa-twitter
+      link: https://twitter.com/thomas_illiet
+    github:
+      icon: fab fa-github
+      link: https://github.com/thomas-illiet
+    linkedin:
+      icon: fab fa-linkedin
+      link: https://www.linkedin.com/in/thomas-illiet/
 
 # Search
 search: true
 
-# Comments
-comments:
-  disqus: false
-  disqus_url: 
+# Comments (via Disqus)
+disqus:
+  shortname: ''
 
 # theme color
 theme-color: default

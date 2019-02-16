@@ -9,7 +9,7 @@ baseurl: ''
 
 # Github settings
 github:
-  repository_url: https://github.com/Powershell-du-Zero/Blog
+  repository_url: https://github.com/Powershell-du-Zero/jekyll-theme-pdz
   branch: master
 
 # Navigation menu settings
@@ -22,8 +22,8 @@ footer:
 
 # Author
 author: Thomas ILLIET
-bio: I’m a Craftsman! I started my journey as a sysadmin. More specificly a Windows sysadmin
-avatar: https://media.licdn.com/dms/image/C4E03AQHZRNTrn7YFLQ/profile-displayphoto-shrink_200_200/0?e=1555545600&v=beta&t=y_giNqdwz1ESTqY9o6cykWTxUxnTe3ZOwB3KI9ZSPxo
+bio: I spent the first part of my career in technology avoiding programming. Since then, I’ve had a change of heart and started down the DevOps path. I quickly figured out coding is where I belong, I no longer consider my job a job. I’m a craftsman! 
+avatar: assets/img/logo.png
 
 # Search
 search: true

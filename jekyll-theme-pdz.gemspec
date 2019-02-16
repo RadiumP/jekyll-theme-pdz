@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["contact@powershell-du-zero.fr"]
 
   spec.summary       = "A modern flat theme for Jenkins"
-  spec.homepage      = "https://powershell-du-zero.fr"
+  spec.homepage      = "https://github.com/Powershell-du-Zero/jekyll-theme-pdz"
   spec.license       = "Apache-2.0"
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|
@@ -19,7 +19,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.2"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.11"
 
-  spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency 'html-proofer', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 0.50'

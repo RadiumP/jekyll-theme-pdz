@@ -4,9 +4,6 @@ shortname: PDZ
 description: Jekyll theme for my organization
 keyword: jekyll, jekyll-theme, jekyll-blog
 
-# if you don't need baseurl, you should leave this value blank.
-baseurl: ''
-
 # Github settings
 github:
   repository_url: https://github.com/Powershell-du-Zero/jekyll-theme-pdz

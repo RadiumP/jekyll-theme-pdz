@@ -57,15 +57,15 @@ layout: default
         <div class="g-sidebar">
             <section class="author-card">
                 <div class="avatar">
-                    <img src="{{ site.avatar | relative_url }}" alt="avatar">
+                    <img src="{{ site.author.avatar | relative_url }}" alt="avatar">
                 </div>
-                <div class="author-name" rel="author">{{ site.author }}</div>
+                <div class="author-name" rel="author">{{ site.author.name }}</div>
                 <div class="bio">
-                    <p>{{ site.bio }}</p>
+                    <p>{{ site.author.bio }}</p>
                 </div>
-                {% if site.social.size > 0 %}
+                {% if site.author.social.size > 0 %}
                 <ul id="social-links" class="social-links">
-                    {% for social in site.social %}
+                    {% for social in site.author.social %}
                     <li>
                         <a href="{{ social[1].link }}" target="_blank">
                             <i class="{{ social[1].icon }}"></i>

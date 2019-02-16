@@ -5,6 +5,12 @@
 <body>
     {% include header.html %}
 
+    {% if page.author-id %}
+        {% assign author_data = site.data.author[page.author-id] %}
+    {% else %}
+        {% assign author_data = site.author %}
+    {% endif %}
+
     <header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}"
         data-theme="{{ site.theme-color }}">
         <div class="post-wrapper">
@@ -18,16 +24,7 @@
             <h1>{{ page.title }}</h1>
             {% if page.description %}<p>{{ page.description }}</p>{% endif %}
             <div class="post-meta">
-                {% if page.author %}
-                <span class="post-meta-item"><i class="far fa-user-circle"></i>
-                    {% for author in page.author %}
-                    <a href="{{ "contributors.html#" | append: author | replace: ' ', '-' | downcase | absolute_url }}">{{ author }}</a>
-                    {% if forloop.last == false %}, {% endif %}
-                    {% endfor %}
-                </span>
-                {% else %}
-                <span class="post-meta-item"><i class="far fa-user-circle"></i>{{ site.author }}</span>
-                {% endif %}
+                <span class="post-meta-item"><i class="far fa-user-circle"></i> {{ author_data.name }}</span>
                 <span class="post-meta-item"><i class="far fa-clock"></i>
                     <time datetime="{{ page.date | date:"%y-%m-%d" }}">{{ page.date | date_to_string }}</time>
                 </span>
@@ -64,15 +61,15 @@
     <section class="author-detail">
         <section class="post-footer-item author-card">
             <div class="avatar">
-                <img src="{{ site.avatar | absolute_url }}" alt="avatar">
+                <img src="{{ author_data.avatar | relative_url }}" alt="avatar">
             </div>
-            <div class="author-name" rel="author">{{ site.author }}</div>
+            <div class="author-name" rel="author">{{ author_data.name }}</div>
             <div class="bio">
-                <p>{{ site.bio }}</p>
+                <p>{{ author_data.bio }}</p>
             </div>
-            {% if site.data.social.size > 0 %}
+            {% if author_data.social.size > 0 %}
             <ul id="social-links" class="social-links">
-                {% for social in site.data.social %}
+                {% for social in author_data.social %}
                 <li>
                     <a href="{{ social[1].link }}" target="_blank">
                         <i class="{{ social[1].icon }}"></i>

@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <!-- Basic -->
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="author" content="{{ site.author }}">
+    <meta name="author" content="{{ site.author.name }}">
     <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="keywords" content="{% if page.tags.size > 0 %}{% for tag in page.tags  %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}">
     <link rel="icon" href="{{ '/' | relative_url }}assets/img/favicon.ico" />

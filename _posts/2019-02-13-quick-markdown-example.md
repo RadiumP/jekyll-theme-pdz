@@ -2,9 +2,12 @@
 layout: post
 title:  "Quick Markdown Example"
 date:   2019-02-13
+post-cover: /demo/img/header-03.jpg
+tags: jekyll markdown example
+summary : true
 ---
 
-This is intended as a quick reference and showcase.
+This is designed as a quick reference and allows you to easily configure your jekyll website.
 
 # h1 Heading
 ## h2 Heading

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
+title: Welcome to Jekyll!
 date: 2019-02-14
-post-cover: /demo/img/header-02.jpg
+post-cover: /uploads/header-02-cover.jpg
+preview-cover: /uploads/header-02-preview.jpg
 tags: jekyll welcome
 toc : false
 ---

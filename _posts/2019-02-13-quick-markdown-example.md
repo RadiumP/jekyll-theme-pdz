@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Quick Markdown Example"
-date:   2019-02-13
-post-cover: /demo/img/header-03.jpg
+title: Quick Markdown Example
+date: 2019-02-13
+post-cover: /uploads/header-03-cover.jpg
+preview-cover: /uploads/header-03-preview.jpg
 tags: jekyll markdown example
 ---
 
@@ -96,7 +97,7 @@ Colons can be used to align columns.
 | zebra stripes | are neat      |    $1 |
 
 There must be at least 3 dashes separating each header cell.
-The outer pipes | are optional, and you don't need to make the 
+The outer pipes | are optional, and you don't need to make the
 raw Markdown line up prettily. You can also use inline Markdown.
 
 Markdown | Less | Pretty

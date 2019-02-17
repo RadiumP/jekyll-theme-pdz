@@ -76,7 +76,7 @@ $(document).ready(function () {
     var themeStyle = $('.g-banner').attr('data-theme');
     var scFlag = $(document).scrollTop();
     var currentWidth = $(window).width();
-    var catalog = $('.catalog-container');
+    var catalog = $('.toc-container');
     if (currentWidth > 1200) {
       catalog.show();
     }

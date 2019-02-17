@@ -42,14 +42,16 @@
     </header>
 
     <div class="post-content visible">
-        <div class="catalog-container">
-            <div class="side-catalog">
-                <h3 class="catalog-title">
-                    <a class="catalog-toggle" href="#">Dans cet article</a>
+        {%- if page.toc != false -%}
+        <div class="toc-container">
+            <div class="side-toc">
+                <h3 class="title">
+                    <a class="toc-toggle" href="#">Dans cet article</a>
                 </h3>
-                <ul class="catalog-body"></ul>
+                <ul class="toc-body"></ul>
             </div>
         </div>
+        {% endif %}
         {% if page.subtitle %}
         <h2 class="post-subtitle">{{ page.subtitle }}</h2>
         {% endif %}
@@ -123,50 +125,9 @@
     
     <script src="/assets/js/prism.js"></script>
     <script src="/assets/js/index.min.js"></script>
+    {%- if page.toc != false -%}
     <script src="/assets/js/nav.min.js"></script>
-    <script>
-        function generateCatalog (selector) {
-            // init
-            var P = $('.markdown-body'),a,n,t,l,i,c;
-            a = P.find('h1,h2,h3,h4,h5,h6');
-
-            // clean
-            $(selector).html('')
-
-            // appending
-            a.each(function () {
-                n = $(this).prop('tagName').toLowerCase();
-                i = "#"+$(this).prop('id');
-                t = $(this).text();
-                c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
-                l = $('<li class="'+n+'_nav"></li>').append(c);
-                $(selector).append(l);
-            });
-            return true;
-        }
-
-        generateCatalog(".catalog-body");
-
-        // toggle side catalog
-        $(".catalog-toggle").click((function(e){
-            e.preventDefault();
-            $('.side-catalog').toggleClass("fold")
-        }))
-
-        // support padding
-        $('.catalog-body').onePageNav({
-            currentClass: "active",
-            changeHash: !1,
-            easing: "swing",
-            filter: "",
-            scrollSpeed: 700,
-            scrollOffset: 0,
-            scrollThreshold: .2,
-            begin: null,
-            end: null,
-            scrollChange: null,
-            padding: 80
-        });
-    </script>
+    <script src="/assets/js/toc.min.js"></script>
+    {%- endif -%}
 </body>
 </html>

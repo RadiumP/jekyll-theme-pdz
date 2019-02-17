@@ -1,10 +1,3 @@
-// color
-$color-catalog-active-background: #f5f5f5;
-
-// font-color
-$color-catalog-default-link: #a6a6a6;
-$color-catalog-active-link: #0085a1;
-
 // ++++++++++++++++++++++
 // Mixins
 // ++++++++++++++++++++++
@@ -18,32 +11,32 @@ $color-catalog-active-link: #0085a1;
 
 @media (min-width: 1310px) {
 
-  .catalog-container {
+  .toc-container {
     display: none;
     padding: 0 20px;
     position: absolute;
     right: 0;
-    top: 60px;
-    width: calc(50% - 400px);
+    top: 10px;
+    width: calc(50% - 390px);
     z-index: 100;
 
     &.fixed {
       position: fixed;
     }
 
-    .side-catalog {
+    .side-toc {
       position: relative;
 
-      .catalog-title {
-        padding: 30px 0;
+      .title {
+        padding: 25px 0;
       }
 
-      .catalog-body {
+      .toc-body {
         li {
           position: relative;
 
           a {
-            color: $color-catalog-default-link;
+            color: #a6a6a6;
             display: inline-block;
             height: 30px;
             line-height: 30px;
@@ -57,14 +50,14 @@ $color-catalog-active-link: #0085a1;
           }
 
           &.active {
-            background-color: $color-catalog-active-background;
+            background-color: #f5f5f5;
             border-radius: 4px;
 
             a {
-              color: $color-catalog-active-link !important;
+              color: #0085a1 ;
             }
           }
-          @for $i from 1 through 4 {
+          @for $i from 1 through 6 {
             &.h#{$i}_nav {
               left: 10px * ($i - 1);
             }
@@ -76,7 +69,7 @@ $color-catalog-active-link: #0085a1;
 }
 
 @media (max-width: 1310px) {
-  .catalog-container {
+  .toc-container {
     display: none !important;
   }
 }

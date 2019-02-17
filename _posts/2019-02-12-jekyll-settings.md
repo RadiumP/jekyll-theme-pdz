@@ -5,7 +5,6 @@ date: 2019-02-12
 author-id: 2
 post-cover: /demo/img/header-04.jpg
 tags: jekyll settings tips
-summary : true
 ---
 
 Here's a handy guide to easily setting up your Jekyll website
@@ -14,6 +13,10 @@ Here's a handy guide to easily setting up your Jekyll website
 
 1. Head over to <https://realfavicongenerator.net> to add your own favicons.
 2. Load your favicons in the following location ```/assets/img/favicon.ico```
+
+# Table of content
+
+If you don't want to display table of content for a particular post/page you can disable them by adding ```toc: false``` to that post's or page YAML Front Matter.
 
 # Enabling comments (via Disqus)
 

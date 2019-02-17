@@ -12,39 +12,7 @@ layout: default
 <main class="g-container home-content">
     <div class="article-list">
         {% for post in paginator.posts %}
-        <article class="article-item">
-            {% if post.preview-cover %}
-            <div class="post-cover">
-                <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}"></a>
-                <img src="{{ post.preview-cover }}" href="{{ post.url | relative_url }}" alt="preview-cover">
-            </div>
-            {% elsif post.post-cover %}
-            <div class="post-cover">
-                <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}"></a>
-                <img src="{{ post.post-cover }}" href="{{ post.url | relative_url }}" alt="post-cover">
-            </div>
-            {% endif %}
-            <section class="post-preview">
-                <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}"></a>
-                <h2 class="post-title">{{ post.title }}</h2>
-                {% if post.subtitle %}
-                <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-                {% endif %}
-                {% if post.subtitle.size==0 or post.subtitle==nil %}
-                <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
-                {% endif %}
-            </section>
-            <footer class="post-meta">
-                <div class="post-tags">
-                    {% if post.tags.size > 0 %}
-                    {% for tag in post.tags %}
-                    <a href={{ "tags.html#" | append: tag | relative_url }} class="post-tag">{{ tag | url_decode }}</a>
-                    {% endfor %}
-                    {% endif %}
-                </div>
-                <time class="post-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
-            </footer>
-        </article>
+            {% include article_item.html post=post is_excerpt=true %}
         {% endfor %}
 
         {% if paginator.total_pages > 1 %}
@@ -53,57 +21,7 @@ layout: default
 
     </div>
 
-    <aside class="g-sidebar-wrapper">
-        <div class="g-sidebar">
-            <section class="author-card">
-                <div class="avatar">
-                    <img src="{{ site.author.avatar | relative_url }}" alt="avatar">
-                </div>
-                <div class="author-name" rel="author">{{ site.author.name }}</div>
-                <div class="bio">
-                    <p>{{ site.author.bio }}</p>
-                </div>
-                {% if site.author.social.size > 0 %}
-                <ul id="social-links" class="social-links">
-                    {% for social in site.author.social %}
-                    <li>
-                        <a href="{{ social[1].link }}" target="_blank">
-                            <i class="{{ social[1].icon }}"></i>
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-            </section>
-
-            {% if site.recommend-tags and site.tags.size>0 %}
-            <section class="tags-card">
-                {% for tag in site.tags %}
-                {% if forloop.index > site.recommend-condition-size %}
-                {% break %}
-                {% endif %}
-                <a href="{{ "tags.html#" | append: tag[0] | relative_url }}" class="tag">{{ tag[0] | url_decode }}</a>
-                {% endfor %}
-            </section>
-            {% endif %}
-        </div>
-
-        {% if site.slack %}
-        <div class="slack-card">
-            <a href="{{site.slack}}" class="btn"><i class="fab fa-slack"></i>Rejoindre le Slack</a>
-        </div>
-        {% endif %}
-
-        {% if site.search %}
-        <div class="search-card">
-            <input id="search_input" type="text" placeholder="Recherche..." autocomplete="off">
-            <i class="iconfont icon-search"></i>
-            <div class="search_result"></div>
-        </div>
-        {% endif %}
-
-    </aside>
-
+    {% include sidebar.html %}
 </main>
 
 {% include footer.html %}

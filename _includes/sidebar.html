@@ -1,0 +1,44 @@
+<aside class="g-sidebar-wrapper">
+    <div class="g-sidebar">
+        <section class="author-card">
+            <div class="avatar">
+                <img src="{{ site.author.avatar | relative_url }}" alt="avatar">
+            </div>
+            <div class="author-name" rel="author">{{ site.author.name }}</div>
+            <div class="bio">
+                <p>{{ site.author.bio }}</p>
+            </div>
+            {% if site.author.social.size > 0 %}
+            <ul id="social-links" class="social-links">
+                {% for social in site.author.social %}
+                <li>
+                    <a href="{{ social[1].link }}" target="_blank">
+                        <i class="{{ social[1].icon }}"></i>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </section>
+
+        {% if site.recommend-tags and site.blog_tags.size>0 %}
+        <section class="tags-card">
+            {% for tag in site.blog_tags %}
+                {% if forloop.index > site.recommend-condition-size %}
+                {% break %}
+                {% endif %}
+                <a href="{{ tag.permalink | relative_url }}" class="tag">{{ tag.title | url_decode }}</a>
+            {% endfor %}
+        </section>
+        {% endif %}
+    </div>
+
+    {% if site.search %}
+    <div class="search-card">
+        <input id="search_input" type="text" placeholder="Recherche..." autocomplete="off">
+        <i class="iconfont icon-search"></i>
+        <div class="search_result"></div>
+    </div>
+    {% endif %}
+
+</aside>

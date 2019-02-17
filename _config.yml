@@ -4,14 +4,52 @@ shortname: PDZ
 description: Jekyll theme for my organization
 keyword: jekyll, jekyll-theme, jekyll-blog
 
+# Collections
+# https://jekyllrb.com/docs/collections/
+collections:
+  posts:
+    title: Posts
+    output: true
+  blog_tags:
+    title: Tags
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+
+# Front matter defaults
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: /:year/:month/:day/:title.html
+    layout: post
+- scope:
+    path: ''
+    type: blog_tags
+  values:
+    layout: tag
+
 # Github settings
 github:
   repository_url: https://github.com/Powershell-du-Zero/jekyll-theme-pdz
   branch: master
 
 # Navigation menu settings
-topnav:
+header_nav:
   home: /
+  article:
+    - Welcome to Jekyll!: /2019/02/14/welcome-to-jekyll.html
+    - Markdown Example: /2019/02/13/quick-markdown-example.html
+    - Jekyll Settings: /2019/02/12/jekyll-settings.html
+  tag:
+    - Jekyll: /tags/jekyll/
+    - Tips: /tags/tips/
+    - Markdown : /tags/markdown/
+    - Example: /tags/example/
+    - Welcome: /tags/welcome/
 
 # Footer
 footer:
@@ -20,7 +58,7 @@ footer:
 # Author
 author:
   name: Thomas ILLIET
-  avatar: demo/img/avatar-thomas-illiet.jpg
+  avatar: /uploads/avatar-thomas-illiet.jpg
   bio: DevOps Engineer | Speaker | Blogger | PowerShell Advocate
   social:
     twitter:
@@ -70,9 +108,6 @@ future: false
 
 # RSS
 RSS: true
-
-# Permalink
-permalink: /:year/:month/:day/:title.html
 
 # Assets Settings
 sass:

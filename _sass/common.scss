@@ -820,12 +820,33 @@
 }
 
 .pages-banner {
+  box-shadow: 0 4px 20px rgba(0, 38, 55, 0.16);
   height: 300px;
+  overflow: hidden;
+  position: relative;
   text-align: center;
 
+  h2,
+  h3 {
+    position: relative;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
   h2 {
+    font-family: 'Arial', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
     font-size: 36px;
-    line-height: 300px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 52px;
+    padding-top: 135px;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 10px;
+    margin-top: 8px;
   }
 }
 

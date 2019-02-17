@@ -3,7 +3,8 @@ layout: post
 title: Jekyll Settings
 date: 2019-02-12
 author-id: 2
-post-cover: /demo/img/header-04.jpg
+post-cover: /uploads/header-04-cover.jpg
+preview-cover: /uploads/header-04-preview.jpg
 tags: jekyll settings tips
 ---
 
@@ -37,7 +38,7 @@ If you don't want to display comments for a particular post you can disable them
 
 # Social networks
 
-You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your config. 
+You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your config.
 
 ```yml
 # Author settings
@@ -67,3 +68,18 @@ To enable Google Analytics, add the following lines to your Jekyll site:
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: UA-NNNNNNNN-N
 ```
+
+# Add tags
+
+To add tags, create a new ```yml``` file in ```_blog_tags``` directory with the following lines :
+
+```yml
+---
+title: Markdown
+description: love it
+permalink: "/tags/markdown/"
+header-img: /uploads/header-01.jpg
+---
+```
+
+The parameters "**description**" & "**header-img**" are optional, they are used to customize the pages of tags.

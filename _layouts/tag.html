@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="g-banner pages-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" style="{% if page.header-img %}background: url({{ page.header-img | relative_url }}) no-repeat center center; background-size: cover;{% endif %}">
+    <h2>{{ page.title }}</h2>
+    <h3>{{ page.description }}</h3>
+</div>
+
+<main class="g-container home-content">
+
+    <div class="article-list">
+        {% assign tag = page.title | downcase %}
+        {% assign tag_posts = site.tags[tag] %}
+        {% for post in tag_posts %}
+            {% include article_item.html post=post is_excerpt=true %}
+        {% endfor %}
+    </div>
+
+    {% include sidebar.html %}
+</main>
+
+{% include footer.html %}
+
+

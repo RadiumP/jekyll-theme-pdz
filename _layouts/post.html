@@ -17,7 +17,7 @@
             <div class="post-tags">
                 {% if page.tags.size > 0 %}
                 {% for tag in page.tags %}
-                <a href="{{ '/tags.html#' | append: tag  }}" class="post-tag">{{ tag | url_decode}}</a>
+                <a href="{{ '/tags/' | append: tag | append: '/' | relative_url }}" class="post-tag">{{ tag | url_decode}}</a>
                 {% endfor %}
                 {% endif %}
             </div>
@@ -122,7 +122,7 @@
     </section>
 
     {% include footer.html %}
-    
+
     <script src="/assets/js/prism.js"></script>
     <script src="/assets/js/index.min.js"></script>
     {%- if page.toc != false -%}

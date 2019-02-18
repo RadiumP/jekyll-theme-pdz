@@ -12,7 +12,7 @@ Lorem markdownum illum effigiem relictis et exspectanda munera. Figuris non illi
 Diti pietas populusque falsa paternas externos arma credensque murmur.
 
 Vel oculos, dextra deposito pariter, hac solvit conspecta myrtus? Alvo *debes
-mihi* corpora, planxitque quas [herbas](#namque): mortale innocuum et.
+mihi* corpora, planxitque quas herbas: mortale innocuum et.
 
 - Vero subit
 - Vasti lacunabant potenti muneris
@@ -57,7 +57,7 @@ non aut.
 
 > Attonuit Thoona Dianae gratissima crescit locus una silvis manibus durare
 > habuit. Terrae **rates** pio etiam non lacrimas et illa. Est reclusa tectus
-> [celsa strinxit](#parentali): ab pennis fingant interdum auspiciis admonitus
+> celsa strinxit: ab pennis fingant interdum auspiciis admonitus
 > dixit; missos Peleus sedibus. Relicta annos aequor invicti.
 
 ### Nomine saepe visi aristis Amythaone
@@ -75,7 +75,7 @@ Pugnat aera, simul nescis imagine emissi. Seu gestu in suis feruntque recolligis
 recognoscit forent iussit ab Bacchi fuerat!
 
 Suis semper prius digna *proles*, solet nisi, quod incisa. Qua forent serasque
-his! [Mea](#quoque) inter iniit reluxit cruentos tura: fuit forte cura locat
+his! Mea inter iniit reluxit cruentos tura: fuit forte cura locat
 arborea rus iamque pennas praedelassat et venite oculos mare. Precibus virili
 Iovemque.
 

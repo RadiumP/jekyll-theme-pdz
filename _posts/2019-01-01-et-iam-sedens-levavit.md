@@ -3,21 +3,21 @@ layout: post
 title: Et iam sedens levavit
 date: 2019-01-01
 author-id: 2
-post-cover: /uploads/header-05-cover.jpg
-preview-cover: /uploads/header-05-preview.jpg
+post-cover: /demo/img/header-05-cover.jpg
+preview-cover: /demo/img/header-05-preview.jpg
 tags: lorem
 ---
 
 Lorem markdownum iuvenci egens, iudicis! Rogos in fidis creatis decipere
 momentaque fronte tutus spectator membra Cyllenius vita altis cum secus reverti
-facite. Et lacrimis Naides tu nova [te luctibus](#spem-themis), mandata inpune,
+facite. Et lacrimis Naides tu nova te luctibus, mandata inpune,
 quin!
 
 > Rapta magis antra uvis lenta et viasque anguesque praelata tristis iactas,
 > natus grata ab quo perque furit. Proximus ille pondere terris. Est nube Echo
 > cum graviore nostra, petendo Nox et fervet, densa! Canibus illa tortum insania
-> loquor, aequore tacetve velox ut occulte qualis simulacra cyclopum? [Et
-> mortalia adigitque](#qua-non) currat nocuit tauros vincere et oculos, non
+> loquor, aequore tacetve velox ut occulte qualis simulacra cyclopum? Et
+> mortalia adigitque currat nocuit tauros vincere et oculos, non
 > arcem.
 
 Gestet perhorruit premunt sacra tamen secretasque coniugis **quoque**, pectore,
@@ -28,7 +28,7 @@ argumentum agmine sceptra animas dubie visi, Quid magnum.
 
 > Leve siqua sed, altera sed diversa et tollit experientis tigno. Adsimilare
 > pestifer surgente terraeque Cephisius levis tibi fluctus te Aeolides ossaque,
-> vicerat. Quod ore [poenae](#altus-miserrima-tulit) dis, sensit bene illo,
+> vicerat. Quod ore poenae) dis, sensit bene illo,
 > villae, meque vero sine, recentes postera?
 
 ## Volucris fuerat
@@ -53,7 +53,7 @@ temptem patet.
 - Est tamen
 
 Praestat relicta, nostro ire, scelus oritur, fronde **minimae clara** hae nepos,
-[seu](#propter-pedes) tales torta longaque quae! Captus vineta praestans quoque,
+seu tales torta longaque quae! Captus vineta praestans quoque,
 consequar matre cursu sentit Pindo.
 
 ## Altoque dum nuntiet minetur
@@ -68,8 +68,8 @@ innixus respondit placido.
 
 ### Melaneus movebere a verba totumque huc rauco
 
-Fuit addendum iuvenis haec cubile reddita nec oneri, [os dixit
-pictis](#obstupuere-calamo) quae paterni sidereis? Inlaesas rector et fuso.
+Fuit addendum iuvenis haec cubile reddita nec oneri, os dixit
+pictis quae paterni sidereis? Inlaesas rector et fuso.
 **Vero** ait mando norant; per tibi dixerat, quodcumque correpti somnia
 Proteaque fila vidit geminis unde, et carebunt. Limenque me quas dotem terrae,
 dolet utque cedere fudit *exempla tecta*, removit tela propinquae morique harpe
@@ -89,8 +89,8 @@ Prodit iam exitus trahit tecta, ipse visus texerat esse tradita!
 
 Nec nil amas *mitra ad* abesse dederat et pro bello. Et habet Oeclides abit
 dixit testis iras, silentia Achilles pedem palmiferos ostro quater aut tacetve
-vincla. Nautae [quem](#munus-oraque-in), olivae Ilios sume densus, nostri
-praemia tendit, hic aureae, [mactatae terra](#veteres-homini). Dilectaque sine!
+vincla. Nautae quem, olivae Ilios sume densus, nostri
+praemia tendit, hic aureae, mactatae terra. Dilectaque sine!
 Tenuit arcus mihi ebori, **spargere** mihi ad, opus lenimen, sic agit, puer
 canendo.
 

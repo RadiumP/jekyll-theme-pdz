@@ -8,7 +8,7 @@ preview-cover: /uploads/header-05-preview.jpg
 tags: lorem
 ---
 
-Lorem markdownum illa: hac animo quae: terque [umbrosum penetralia](#fuit-illi)
+Lorem markdownum illa: hac animo quae: terque umbrosum penetralia
 sumit contemptor audit, mox! Armentorum longa, qua, toro sim occupat pervenit
 carmen Teuthranteusque repertum coercebat. Lacertos erit vivere una. Non satus
 conveniunt placent, nec siquid humo, felicia veri.

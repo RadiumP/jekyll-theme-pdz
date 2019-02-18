@@ -5,7 +5,7 @@ date: 2019-02-12
 author-id: 2
 post-cover: /uploads/header-04-cover.jpg
 preview-cover: /uploads/header-04-preview.jpg
-tags: jekyll settings tips
+tags: jekyll tips
 ---
 
 Here's a handy guide to easily setting up your Jekyll website

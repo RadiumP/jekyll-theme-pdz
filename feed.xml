@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-02-18T00:15:44+00:00</updated><id>/feed.xml</id><title type="html">PowerShell du Zéro</title><subtitle>Jekyll theme for my organization</subtitle><author><name>Thomas ILLIET</name></author><entry><title type="html">Welcome to Jekyll!</title><link href="/2019/02/14/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-02-14T00:00:00+00:00</published><updated>2019-02-14T00:00:00+00:00</updated><id>/2019/02/14/welcome-to-jekyll</id><content type="html" xml:base="/2019/02/14/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Thomas ILLIET</name></author><category term="jekyll" /><category term="welcome" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Quick Markdown Example</title><link href="/2019/02/13/quick-markdown-example.html" rel="alternate" type="text/html" title="Quick Markdown Example" /><published>2019-02-13T00:00:00+00:00</published><updated>2019-02-13T00:00:00+00:00</updated><id>/2019/02/13/quick-markdown-example</id><content type="html" xml:base="/2019/02/13/quick-markdown-example.html">&lt;p&gt;This is designed as a quick reference and allows you to easily configure your jekyll website.&lt;/p&gt;
+
+&lt;h1 id=&quot;h1-heading&quot;&gt;h1 Heading&lt;/h1&gt;
+&lt;h2 id=&quot;h2-heading&quot;&gt;h2 Heading&lt;/h2&gt;
+&lt;h3 id=&quot;h3-heading&quot;&gt;h3 Heading&lt;/h3&gt;
+&lt;h4 id=&quot;h4-heading&quot;&gt;h4 Heading&lt;/h4&gt;
+&lt;h5 id=&quot;h5-heading&quot;&gt;h5 Heading&lt;/h5&gt;
+&lt;h6 id=&quot;h6-heading&quot;&gt;h6 Heading&lt;/h6&gt;
+
+&lt;h2 id=&quot;horizontal-rules&quot;&gt;Horizontal Rules&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;emphasis&quot;&gt;Emphasis&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;This is bold text&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This is bold text&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This is italic text&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This is italic text&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Blockquotes can also be nested…&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;…by using additional greater-than signs right next to each other…&lt;/p&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;…or with spaces between arrows.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
+
+&lt;p&gt;Unordered&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a list by starting a line with &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;, or &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Sub-lists are made by indenting 2 spaces:
+    &lt;ul&gt;
+      &lt;li&gt;Marker character change forces new list start:
+        &lt;ul&gt;
+          &lt;li&gt;Ac tristique libero volutpat at&lt;/li&gt;
+          &lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+          &lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Very easy!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ordered&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+  &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+  &lt;li&gt;You can use sequential numbers…&lt;/li&gt;
+  &lt;li&gt;…or keep all the numbers as &lt;code class=&quot;highlighter-rouge&quot;&gt;1.&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;Inline &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Block code “fences”&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Sample text here...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Syntax highlighting&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+
+&lt;p&gt;Tables aren’t part of the core Markdown spec, but they are part of GFM and &lt;em&gt;Markdown Here&lt;/em&gt; supports them. They are an easy way of adding tables to your email – a task that would otherwise require copy-pasting from another application.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes | are optional, and you don't need to make the
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Colons can be used to align columns.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tables&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Are&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Cool&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 3 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;right-aligned&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 2 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;zebra stripes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;There must be at least 3 dashes separating each header cell. The outer pipes&lt;/td&gt;
+      &lt;td&gt;are optional, and you don’t need to make the raw Markdown line up prettily. You can also use inline Markdown.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Markdown&lt;/th&gt;
+      &lt;th&gt;Less&lt;/th&gt;
+      &lt;th&gt;Pretty&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;Still&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;renders&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;nicely&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Thomas ILLIET</name></author><category term="jekyll" /><category term="markdown" /><category term="example" /><summary type="html">This is designed as a quick reference and allows you to easily configure your jekyll website.</summary></entry><entry><title type="html">Jekyll Settings</title><link href="/2019/02/12/jekyll-settings.html" rel="alternate" type="text/html" title="Jekyll Settings" /><published>2019-02-12T00:00:00+00:00</published><updated>2019-02-12T00:00:00+00:00</updated><id>/2019/02/12/jekyll-settings</id><content type="html" xml:base="/2019/02/12/jekyll-settings.html">&lt;p&gt;Here’s a handy guide to easily setting up your Jekyll website&lt;/p&gt;
+
+&lt;h1 id=&quot;add-your-favicons&quot;&gt;Add your favicons&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Head over to &lt;a href=&quot;https://realfavicongenerator.net&quot;&gt;https://realfavicongenerator.net&lt;/a&gt; to add your own favicons.&lt;/li&gt;
+  &lt;li&gt;Load your favicons in the following location &lt;code class=&quot;highlighter-rouge&quot;&gt;/assets/img/favicon.ico&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;table-of-content&quot;&gt;Table of content&lt;/h1&gt;
+
+&lt;p&gt;If you don’t want to display table of content for a particular post/page you can disable them by adding &lt;code class=&quot;highlighter-rouge&quot;&gt;toc: false&lt;/code&gt; to that post’s or page YAML Front Matter.&lt;/p&gt;
+
+&lt;h1 id=&quot;enabling-comments-via-disqus&quot;&gt;Enabling comments (via Disqus)&lt;/h1&gt;
+
+&lt;p&gt;Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.&lt;/p&gt;
+
+&lt;p&gt;To enable it, add the following lines to your Jekyll site:&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Comments (via Disqus)&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;comments&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;shortname&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;powershell-du-zero'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can find out more about Disqus’ shortnames &lt;a href=&quot;https://help.disqus.com/installation/whats-a-shortname&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you don’t want to display comments for a particular post you can disable them by adding &lt;code class=&quot;highlighter-rouge&quot;&gt;comments: false&lt;/code&gt; to that post’s YAML Front Matter.&lt;/p&gt;
+
+&lt;h1 id=&quot;social-networks&quot;&gt;Social networks&lt;/h1&gt;
+
+&lt;p&gt;You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your config.&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Author settings&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Thomas ILLIET&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;demo/img/avatar-thomas-illiet.jpg&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;social&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;twitter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;fab fa-twitter&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://twitter.com/PowershellZ&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;fab fa-github&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://github.com/Powershell-du-Zero&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;linkedin&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;fab fa-linkedin&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://www.linkedin.com/company/powershell-du-zero/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To find more icon, you can visit the website &lt;a href=&quot;https://fontawesome.com/&quot;&gt;Font Awesome&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;enabling-google-analytics&quot;&gt;Enabling Google Analytics&lt;/h1&gt;
+
+&lt;p&gt;To enable Google Analytics, add the following lines to your Jekyll site:&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Fill in your Google Analytics ID to track your website using GA&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;google_analytics&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;UA-NNNNNNNN-N&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;add-tags&quot;&gt;Add tags&lt;/h1&gt;
+
+&lt;p&gt;To add tags, create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;yml&lt;/code&gt; file in &lt;code class=&quot;highlighter-rouge&quot;&gt;_blog_tags&lt;/code&gt; directory with the following lines :&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Markdown&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;love it&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/tags/markdown/&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;header-img&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/uploads/header-01.jpg&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The parameters “&lt;strong&gt;description&lt;/strong&gt;” &amp;amp; “&lt;strong&gt;header-img&lt;/strong&gt;” are optional, they are used to customize the pages of tags.&lt;/p&gt;</content><author><name>Thomas ILLIET</name></author><category term="jekyll" /><category term="tips" /><summary type="html">Here’s a handy guide to easily setting up your Jekyll website</summary></entry><entry><title type="html">Caelestia vestigia venam</title><link href="/2019/01/09/caelestia-vestigia-venam.html" rel="alternate" type="text/html" title="Caelestia vestigia venam" /><published>2019-01-09T00:00:00+00:00</published><updated>2019-01-09T00:00:00+00:00</updated><id>/2019/01/09/caelestia-vestigia-venam</id><content type="html" xml:base="/2019/01/09/caelestia-vestigia-venam.html">&lt;p&gt;Lorem markdownum eras caput una quod: haec non Latini,
+tepidisque qui concipit. Dissimilem contigerant socii arma his pectoraque vixque
+leti tactusque induta &lt;em&gt;arduus defuerunt&lt;/em&gt;, quoniam contigit morte, haec et
+aditus. Cervi Troiae est nudaverat; heros nunc meos id subiectaque ingemit
+egredior sacris sive sopire quibus antiquo: canis.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ferox et vos fac oves umerum&lt;/li&gt;
+  &lt;li&gt;Hic et Quo est Thracia bellator inmota&lt;/li&gt;
+  &lt;li&gt;Tenens turbamve at sensit in copia nullo&lt;/li&gt;
+  &lt;li&gt;Nunc vix mensura adspicias animal Oceano ab&lt;/li&gt;
+  &lt;li&gt;Oras nec undas opem vivax maximus vaporibus&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;curva-haec-arbore&quot;&gt;Curva haec arbore&lt;/h2&gt;
+
+&lt;p&gt;Visura nutu nobis, Ossa quam avem cunasque me &lt;em&gt;labens&lt;/em&gt; mare referebat adde nec
+altus extulit velaturque deus gaudere acta. Ebore locum iacet certe pontus
+sopire, recentes succedat sitientes offensa purpura quamquam, et ergo frater nec
+ipso nil. Per formas et colla canos; populusque Haemus egens animorum vulnere
+victrices ac leges &lt;em&gt;angusta&lt;/em&gt;. Et carens nempe sapienter rivus incerti sanctique
+&lt;strong&gt;Perseidos&lt;/strong&gt; restabat quaesitis senserunt referitur?&lt;/p&gt;
+
+&lt;h2 id=&quot;habet-iani-mota-inque&quot;&gt;Habet Iani Mota inque&lt;/h2&gt;
+
+&lt;p&gt;Dedit iuvenem precando ille quaesiti inde Aiacem? Qua multis quas fugit sorores
+summam properent et hoste natura Colchide nocti.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Et probetne orbem&lt;/li&gt;
+  &lt;li&gt;Dixit cum tamen me&lt;/li&gt;
+  &lt;li&gt;Taurorum parentis sileam at turpiter totis&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;undis-ergo&quot;&gt;Undis ergo&lt;/h2&gt;
+
+&lt;p&gt;Praeteriti admovet quod traxere laudis nemorumque sufficit siquis umida
+lacrimantia ne memor propiora sanguine Dixerat moram, tendimus
+verba. Parentem quod audet septem perosa ut idemque parat in
+a talibus armos Proserpina gaudia. Artus lapsu ferebat Baucide summa cristati
+adicit ducebat: nullo pacem, est ad? Omnia populumque duo denique quondam es
+femina direpta: inveniebantur ergo: artus medio vetus nec.&lt;/p&gt;
+
+&lt;h2 id=&quot;ferro-armeniae-bracchia&quot;&gt;Ferro Armeniae bracchia&lt;/h2&gt;
+
+&lt;p&gt;Saetis iam illam creati ministro: illi quia corpore ubi semper superorum tempora
+ferox, lumina munera saepe. Per ad vultus iam soporem erant. Ruit avus unde sed
+nomina epota sub senis, perstant gloria; et.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Loco utqueinterea quale caelumque, memor est sed nec;
+tu, pavonibus offensi pectora. Sub atque arguitur spargere flores invenio
+ultus propiore?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Tubas veni sua facundia medicas proles, committitur fiunt, raptor praeterque
+tollit vobis. Aram pavidae venienti, virgineum hoc parat figuram suo foedere,
+utinam, circumflua quod corpore auro, ut. Serius dixit pariterque nec notavi
+dicenti spectare nostro hic vicibus oculos Astreus concordia. Pinuque genitor
+vis ipsa quinque inponit. Et quae illa, abit pater!&lt;/p&gt;</content><author><name>Thomas ILLIET</name></author><category term="lorem" /><summary type="html">Lorem markdownum eras caput una quod: haec non Latini, tepidisque qui concipit. Dissimilem contigerant socii arma his pectoraque vixque leti tactusque induta arduus defuerunt, quoniam contigit morte, haec et aditus. Cervi Troiae est nudaverat; heros nunc meos id subiectaque ingemit egredior sacris sive sopire quibus antiquo: canis.</summary></entry><entry><title type="html">Suspicere capacibus nomine fines</title><link href="/2019/01/08/suspicere-capacibus-nomine-fines.html" rel="alternate" type="text/html" title="Suspicere capacibus nomine fines" /><published>2019-01-08T00:00:00+00:00</published><updated>2019-01-08T00:00:00+00:00</updated><id>/2019/01/08/suspicere-capacibus-nomine-fines</id><content type="html" xml:base="/2019/01/08/suspicere-capacibus-nomine-fines.html">&lt;p&gt;Lorem markdownum periuria tamen nubibus vagas aquarum summa religione catenis ut
+fore. Ut lassata, est habebat cuspide in quin ullam in crimine
+sunt, coepit ipsaque erat.&lt;/p&gt;
+
+&lt;p&gt;Mihi meos: &lt;strong&gt;sub texit inquit&lt;/strong&gt;, angues dedit tamen. Ut non, haec terga
+mandataque utrumque hunc! Moliturque tria, hominemque est malles corpora: plura
+quater remittit comitesque, vocat omnibus praecipuum. Sinit quaesitus mortis
+laetatur tenuisse in placida primo, his. Gaudet dapibus elige; dignos mihi ense!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Collegit reliquit in insania illos cupidine superi, Mithridateisque natus. Non
+Tiberinaque, inexorabile et ab inguine, est intus quam mediisque
+libido, vocas remissis &lt;em&gt;innitens&lt;/em&gt;. Tu replet Neritiaeque
+deus laboriferi turba cadit tubere quoniamque penates demitteret flumina ille;
+multa simul caput Laertaque coronatis ferar. Est
+erit.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;tibi-luce-parente-suis-anxia-pariterque&quot;&gt;Tibi luce parente suis anxia pariterque&lt;/h2&gt;
+
+&lt;p&gt;Figurae crimen relevare, tam tota sub colantur dedit donec. Mirer fuit deique
+est huc durus sed ingenua iungit dicens.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Fiunt posito, barba! Pro sulcis sequi; lassus ultima sollemni
+etiamnunc ero illa malum fefellimus conde crinem? Domui enses in illos nec cum
+defecto: tamen: carmine Horamque accipe, quem. Simul pereuntem terram, inde
+hostis lux animosque et sine. Et fugat, turba nec puppes?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;violabere-increscere-quid&quot;&gt;Violabere increscere Quid&lt;/h2&gt;
+
+&lt;p&gt;Formae concresse, et est nate! Accipiter hoc obstrepuere Iuno adiecerit silvas,
+desiderat vigilans discrimina pieros linguae. Tendentem si aetas iuvenesque
+liquerat pater mixtaeque iactu.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Labori lenta Iapygis videritis condor&lt;/li&gt;
+  &lt;li&gt;Favus unguibus Apolline dixit vacuis aures&lt;/li&gt;
+  &lt;li&gt;In negabo&lt;/li&gt;
+  &lt;li&gt;Iacebat domus&lt;/li&gt;
+  &lt;li&gt;Haesit pervenit purpurea ignis laniata absumitur margine&lt;/li&gt;
+  &lt;li&gt;Diffudit et robora gestanda et merito tamen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Quem haut quae nebulas prima deteriora plagis se forma tangendo, opaca vocat et
+carina me. Iacentes guttis, et spes vultus! Ablato per certe cum caelum quid.
+Quid tempora, et nec opibusque, et ab mentior, cupido quae medicina trepidi
+late.&lt;/p&gt;
+
+&lt;h2 id=&quot;deae-auctore-oves&quot;&gt;Deae auctore oves&lt;/h2&gt;
+
+&lt;p&gt;Lorem markdownum haberet non, talia abstulit quandoquidem quam hausitque.
+Superamur legi; sustinuit quaeratur hastae. Celasse quisquis ex inductae transit
+senex quid partes pariter veri fecunda; celebrabant.&lt;/p&gt;
+
+&lt;h2 id=&quot;videri-bella-tua-orbis-paelice-respice-vocem&quot;&gt;Videri bella tua orbis paelice respice vocem&lt;/h2&gt;
+
+&lt;p&gt;Oblitus frequentat inque vidistis extemplo, tollens stamina. Ante erit si
+tellus trepidans vobis hic cum scinditur tota cruciataque modo
+vicem. Non circumvertitur fecit.&lt;/p&gt;
+
+&lt;p&gt;Ubi partim aspera busta arcere; terras dant, &lt;strong&gt;via&lt;/strong&gt; iam socerumque spoliavit
+portasque in memoremque omnia, querella. Intus simulacraque septem tamen
+nescius) Iuppiter an Phoebus tellure Minervae frusta haec.
+Claudit Cyllene nemorosi et tincto totum sola incumbens &lt;em&gt;celer&lt;/em&gt; sibi metum alvum
+crimina.&lt;/p&gt;
+
+&lt;h2 id=&quot;et-ignes-ingeniis-parantem&quot;&gt;Et ignes ingeniis parantem&lt;/h2&gt;
+
+&lt;p&gt;Oeclides resto praesentem suis, harundo. Adplicor Cythereius latitantia suspiria
+humum montibus oblivia ille.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Vidit et aevoque verba vellem siqua, ascendere ripa inultae ab fata, Musa
+longum cui notavit huic. Multos in membra currus nautae quod crescunt
+cetera dilata: videntur. Atris et amissae inquit.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;humilesque-umbras&quot;&gt;Humilesque umbras&lt;/h2&gt;
+
+&lt;p&gt;Quia mensas cursu: ore quaque ecce movet, ad Titanida mugire lauroque stridore
+murum venenis populumque quam! Desilit illa: precanda Troiane
+novissimus tremit illae admoneo sed. Lilia animata quodcumque possunt
+sententia sumusve perque nusquam si vivum columbas sparsit. Quae viae omnis
+inque rediit formaque dea; prensantem oscula qui leves attolle.&lt;/p&gt;
+
+&lt;p&gt;Referebat Phoebe annis. Instanti mutabit, demittere, Hyperione flumen prodis sui
+posset dixit vidit caelestibus nondum, tum.&lt;/p&gt;</content><author><name>Thomas ILLIET</name></author><category term="lorem" /><summary type="html">Lorem markdownum periuria tamen nubibus vagas aquarum summa religione catenis ut fore. Ut lassata, est habebat cuspide in quin ullam in crimine sunt, coepit ipsaque erat.</summary></entry><entry><title type="html">Nec aut modumque</title><link href="/2019/01/07/nec-aut-modumque.html" rel="alternate" type="text/html" title="Nec aut modumque" /><published>2019-01-07T00:00:00+00:00</published><updated>2019-01-07T00:00:00+00:00</updated><id>/2019/01/07/nec-aut-modumque</id><content type="html" xml:base="/2019/01/07/nec-aut-modumque.html">&lt;p&gt;Lorem markdownum illa: hac animo quae: terque umbrosum penetralia
+sumit contemptor audit, mox! Armentorum longa, qua, toro sim occupat pervenit
+carmen Teuthranteusque repertum coercebat. Lacertos erit vivere una. Non satus
+conveniunt placent, nec siquid humo, felicia veri.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Est paene audire? In aquarum praestant quo, &lt;em&gt;fervidus Delosque&lt;/em&gt; oculos
+hostibus posito! Teste cum iunxit pulsant in signa contulerat iuvant, qua.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Inhospita iam alta omne inclinavit equos sono nepos fodiebant de caelo capillis
+cruore? Vir antro nitor, Delonque licet, placeas meum usque, quid est concita
+vestis de volucrum alia. Celat ut passisque hanc Vix ecce urgetque: ora Augustis
+eripuit mersit, iam! Urbem hos male gentis proceres si venerat error
+&lt;strong&gt;praesens&lt;/strong&gt; fidas, aderat sedili.&lt;/p&gt;
+
+&lt;h2 id=&quot;partim-male-dum-facietque-si-iste-male&quot;&gt;Partim male dum facietque si iste male&lt;/h2&gt;
+
+&lt;p&gt;Genitorem Hister atque fecit prudens recenti in, adibat: qui venatrixque, esse.
+Ira illis dato saxa caput haec Minos semel, exceptas et crede adhuc radiis. At
+tu &lt;em&gt;inter&lt;/em&gt; parari venit vellem. Ore &lt;em&gt;dum arte Phrygii&lt;/em&gt; fuit, tua &lt;em&gt;iterata aures
+fert&lt;/em&gt; foret veneni mater opem alumni summam!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Vale ramis dedantur&lt;/li&gt;
+  &lt;li&gt;Colubrae monte ora verba&lt;/li&gt;
+  &lt;li&gt;Rubescere undis caelo&lt;/li&gt;
+  &lt;li&gt;Non telis Sardibus dictis postquam precibus e&lt;/li&gt;
+  &lt;li&gt;Redire ponti refert&lt;/li&gt;
+  &lt;li&gt;Cum o nostro dementer qualemve in hic&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Adiciunt vicina quicquid reges. Et natam placida munus, sed inconsumpta parenti
+ictu, tempus Tydidae, requirit et propter denique. Intentare in Tartara crimen
+ostendere &lt;em&gt;medio&lt;/em&gt; quippe tarda et viderit.&lt;/p&gt;
+
+&lt;h2 id=&quot;aeacidae-flectat&quot;&gt;Aeacidae flectat&lt;/h2&gt;
+
+&lt;p&gt;Laudem acutae obliquum gyrum! Videt suo modo ipsa cum meae fas fortis geminat:
+mora vires atque ipse concipit. Vulnere conclamat obtulit mea, et mare aliasque,
+vir afuit flexit tribus. Feriente abstulit bracchia quod lapsu proxima capit
+sopita, sed fovi?&lt;/p&gt;
+
+&lt;p&gt;Cruentum fecundis secuta, Pallas promissa passu, notabilis sine soleant
+foventque; cepere dies, nam vertex, o. Momentaque adest raptusque Poeantia
+&lt;strong&gt;miracula est&lt;/strong&gt; veniret, in dent visum tollensque acumine renovatus si!&lt;/p&gt;
+
+&lt;p&gt;Et parte belli fugae, labor dant iamque: sed non: cum quod, me. Ut clamor cui
+fertur orbator ut plena miscet illis coniuge subiectas inmotosque nata, non
+umida fortuna. Cerva quem Anienis ante caput habetur magnis coeptis Cinyra
+possit. Et tellure stagna nequiquam, tenebras semel; primitias nemorum illa.
+Captatur sollicita ista iam capiat, &lt;strong&gt;nec&lt;/strong&gt; hoc columnae gerunt ac sine
+parientem sequar est aquosae.&lt;/p&gt;</content><author><name>Thomas ILLIET</name></author><category term="lorem" /><summary type="html">Lorem markdownum illa: hac animo quae: terque umbrosum penetralia sumit contemptor audit, mox! Armentorum longa, qua, toro sim occupat pervenit carmen Teuthranteusque repertum coercebat. Lacertos erit vivere una. Non satus conveniunt placent, nec siquid humo, felicia veri.</summary></entry><entry><title type="html">Quoque capiti</title><link href="/2019/01/06/quoque-capiti.html" rel="alternate" type="text/html" title="Quoque capiti" /><published>2019-01-06T00:00:00+00:00</published><updated>2019-01-06T00:00:00+00:00</updated><id>/2019/01/06/quoque-capiti</id><content type="html" xml:base="/2019/01/06/quoque-capiti.html">&lt;p&gt;Lorem markdownum sinat, Ismenides et tamen hospita quem? Aerias adfore
+Aesone scelerataque fronte, ducens, non responsaque imbres? Iam Axe vincla
+Pallade tamen siccat ubi natas, his in tamen. Ab silvae et nunc laceraret, tu
+dicentem), est sum; quo &lt;em&gt;dis&lt;/em&gt;, fama facies parat
+Amphrisia. Refert mundi ab campus sic ardua turba cognoscit, inopes carmina
+Hippason orbatura siccis contempsere Hectora Hectora.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hinc duxere sine gente, quoque secedere &lt;em&gt;auctor&lt;/em&gt; reflectitur aures membra
+&lt;em&gt;spoliataque confessus conplexa&lt;/em&gt; querenda Echo. Monstro fele undam canis
+vitibus aequor Persidaque labores; citi sed iunguntur communis geras graviore
+&lt;strong&gt;patulis&lt;/strong&gt;, fera.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;mihi-quos-visu-optandi&quot;&gt;Mihi quos visu optandi&lt;/h2&gt;
+
+&lt;p&gt;Coepit tunc. Sola oris arentia pectore Lampetie tethys indiciique &lt;em&gt;pavere
+Pallantidos&lt;/em&gt; Caesaris sparsa? Genero ille visa nymphae omnes, creatas terebrata
+mensis hunc spiris sequitur: opem summo ulla. Solos ubi ardescit violabere
+tergum. Orbem laesum solent causa nymphe ut inter, multaque pax
+antiquam.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Scelus promissaque aures&lt;/li&gt;
+  &lt;li&gt;Iuno vidi felix pars terretur olim magico&lt;/li&gt;
+  &lt;li&gt;Ventos et leges&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;vetusto-iterum-imas-valido-nec&quot;&gt;Vetusto iterum imas valido nec&lt;/h2&gt;
+
+&lt;p&gt;Ante ubi, tolerare spernimus donis, Phinea, aequora medio aetheriis caede
+totidemque. Noemonaque bene cum; quas ira cortex rupisset secum laudata. Sed
+poteram miserabile reddita sollertior. Turbam gradientis virides: quis Aesaris
+sepulcro in illi pronus dubitavit, iano iube male lumen volucres.&lt;/p&gt;
+
+&lt;h2 id=&quot;eque-arma&quot;&gt;Eque arma&lt;/h2&gt;
+
+&lt;p&gt;Damno incurva fingam: iam tamen, medicamine Phocus, viris fronde defendit
+&lt;strong&gt;nomine mihi&lt;/strong&gt;, ubi tamen enim? Me traxit, potes robore, rex
+his nulla camini? Dixit quo Delum &lt;em&gt;liquidum aethera&lt;/em&gt;, Asopida hunc
+&lt;strong&gt;liquefaciunt Danais levor&lt;/strong&gt;, est inpietate. Iuppiter &lt;em&gt;trahens&lt;/em&gt; in illa.&lt;/p&gt;
+
+&lt;p&gt;Et eas gravem, propulit, in, in sed vestigia tamen madefacta famulis colerent
+speciem centum moenia inlato. Mitia mora, corpora sed ausis obliquum possis,
+consistite incurvis; ego. Cum sunt pirithoi nam vocabis Helles tardior
+inquit maternaque si ubi decepto est levant &lt;em&gt;falsa&lt;/em&gt;, manet!
+In unda sed. Nulla deos alvum potuit humani tergoque gravibus undis et gravitate
+&lt;em&gt;tamen&lt;/em&gt; adgnovitque quod!&lt;/p&gt;
+
+&lt;h2 id=&quot;heres-hostilique-rediit-dedit&quot;&gt;Heres hostilique rediit dedit&lt;/h2&gt;
+
+&lt;p&gt;Lorem markdownum quis. Tantis nectare. Quid tridente ignavo exsecrantia animi
+nupta, ingemuitque videt tu faecis, cupit cetera &lt;em&gt;velantibus telum Actoriden&lt;/em&gt;
+formosus quicumque qualesque? Arva ille autumnum Pergama terris murice tacto
+barbarus forma, ut inter tubicen nativum. Tua referre mensis, viroque prima
+Ethemon ingemuit ut natorum.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hinc aer partem&lt;/li&gt;
+  &lt;li&gt;Firmat moverent latuerunt aequore praefert aversus regnum&lt;/li&gt;
+  &lt;li&gt;Puerilibus poposcerat auctor Saturnius tange frater manu&lt;/li&gt;
+  &lt;li&gt;Insania iuga nec&lt;/li&gt;
+  &lt;li&gt;Fidumque placere&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ipse-egit-profuit-quoniam&quot;&gt;Ipse egit profuit quoniam&lt;/h2&gt;
+
+&lt;p&gt;Turba in abluit longique et sentibus herbarum nondum nec est. Coniugium
+anseribus quod: medendi nisi, et et non vocem mihi fatorum dum Phoebus vestem
+longoque cecidere.&lt;/p&gt;
+
+&lt;h2 id=&quot;veluti-semper-adpellatque-alimentaque-tendentemque-rerum-vulgata&quot;&gt;Veluti semper adpellatque alimentaque tendentemque rerum vulgata&lt;/h2&gt;
+
+&lt;p&gt;Ismenides murmure tua irae et peterem umor. Non solvit generis facienda loqui,
+asper diva esse figuras, hoc dextra posse fumantiaque.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ramis et iugis adstitit&lt;/li&gt;
+  &lt;li&gt;Ferat quis&lt;/li&gt;
+  &lt;li&gt;Concede pleno manus resuscitat invitusque Hodites&lt;/li&gt;
+  &lt;li&gt;Quater miser negarent novat descendere bella vidit&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ut-sidus-dempto-habitabilis-argenti-erat-vigor&quot;&gt;Ut sidus dempto habitabilis argenti erat vigor&lt;/h2&gt;
+
+&lt;p&gt;Lacrimas dirae, post heres pectore metuentior audita vultus pater.
+Cara Melicerta, suos luserat declinet, in undas suarum procul venitque rettulit
+quantaque precor, duris. Alte ensem, tria fugae hirsutus Latonae cyclopum summae
+Troiae. Omnes votis Haemonio in reor innumeris puppe, patre. Fortibus inflataque
+convocat novercae ardesceret miratur &lt;strong&gt;mortalis&lt;/strong&gt; flumina alimentaque iuvenis
+pharetras oculosque corporibus lumina &lt;em&gt;antiquas&lt;/em&gt;, mihi ego.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Murra inmane&lt;/li&gt;
+  &lt;li&gt;Nomina quod&lt;/li&gt;
+  &lt;li&gt;Spectabilis penna morus fortuna polenta&lt;/li&gt;
+  &lt;li&gt;Non sitis aures tremuere ut dilexit aerias&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;redolent-est&quot;&gt;Redolent est&lt;/h2&gt;
+
+&lt;p&gt;Patitur dat hostis feruntur Bacchus impediunt promissa gurgite nubila deberi
+nulla luce coniuge quae. An facta pressit mihi Ceres viros prodere imagine
+irascitur certamine.&lt;/p&gt;
+
+&lt;p&gt;Ageret memori, &lt;strong&gt;dixerat sibi&lt;/strong&gt; ipsa; crura horrifer abest! Bitumen quondam.
+Leones in lumen se esse esse: stare certamina, inexorabile. Aquis ingratum et
+istis inmotus &lt;strong&gt;tenero&lt;/strong&gt; aut crimine medullas queat, pulsumque actum latera: sua
+&lt;em&gt;at manibus&lt;/em&gt; serasque et.&lt;/p&gt;</content><author><name>Thomas ILLIET</name></author><category term="lorem" /><summary type="html">Lorem markdownum sinat, Ismenides et tamen hospita quem? Aerias adfore Aesone scelerataque fronte, ducens, non responsaque imbres? Iam Axe vincla Pallade tamen siccat ubi natas, his in tamen. Ab silvae et nunc laceraret, tu dicentem), est sum; quo dis, fama facies parat Amphrisia. Refert mundi ab campus sic ardua turba cognoscit, inopes carmina Hippason orbatura siccis contempsere Hectora Hectora.</summary></entry><entry><title type="html">Dentes inter desere</title><link href="/2019/01/05/dentes-inter-desere.html" rel="alternate" type="text/html" title="Dentes inter desere" /><published>2019-01-05T00:00:00+00:00</published><updated>2019-01-05T00:00:00+00:00</updated><id>/2019/01/05/dentes-inter-desere</id><content type="html" xml:base="/2019/01/05/dentes-inter-desere.html">&lt;p&gt;Lorem markdownum illum effigiem relictis et exspectanda munera. Figuris non illi
+Diti pietas populusque falsa paternas externos arma credensque murmur.&lt;/p&gt;
+
+&lt;p&gt;Vel oculos, dextra deposito pariter, hac solvit conspecta myrtus? Alvo &lt;em&gt;debes
+mihi&lt;/em&gt; corpora, planxitque quas herbas: mortale innocuum et.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Vero subit&lt;/li&gt;
+  &lt;li&gt;Vasti lacunabant potenti muneris&lt;/li&gt;
+  &lt;li&gt;Cervice retentus&lt;/li&gt;
+  &lt;li&gt;Lycei rubet ante&lt;/li&gt;
+  &lt;li&gt;Ambitae ipsa alterius magno quaedam Aeneae concita&lt;/li&gt;
+  &lt;li&gt;Cornua liquido candidus&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dissuadere officium Venere inquinat caespite absunt dolores, enim talum nubibus,
+frustra! Parte cupit veniam quod, elidite idque. Telluris mora sacrum teneri iam
+bis solebat magis, auxiliumque piumque Hesperium maduere &lt;strong&gt;superum nulla&lt;/strong&gt;, non.&lt;/p&gt;
+
+&lt;h2 id=&quot;resupinoque-quibus-alterius-et-alte-rex-hoc&quot;&gt;Resupinoque quibus alterius et alte rex hoc&lt;/h2&gt;
+
+&lt;p&gt;Est hausit prospexit mecum annis alte populos eras illuc est nostroque gravem
+non est vulnus. Vero specto fatali: sit &lt;strong&gt;cornua Libye fallat&lt;/strong&gt; parentem
+corpora, ales silendo.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Posse glans, vincloque, at memini, quas vulneraque. Formae laborum inque
+tenui.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Fuit veloci&lt;/em&gt;, artus inque indomito praemia animam ad gelida dure potentem. Os
+paternos placato os effugit positu, salve ecce sinunt comites, greges Tenedonque
+deus, &lt;em&gt;longe&lt;/em&gt; inque. Campus sentiet faciem, ponderibus pennis. Deo saepe ibimus
+aliae penetrale?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ab silva adhuc&lt;/li&gt;
+  &lt;li&gt;Tamen gementis&lt;/li&gt;
+  &lt;li&gt;Aliquid habebas tribuitque ferus adiectura ire super&lt;/li&gt;
+  &lt;li&gt;Concurrere proxima altus tu oculis dixit sed&lt;/li&gt;
+  &lt;li&gt;Partesque timor&lt;/li&gt;
+  &lt;li&gt;Urbem crura adhuc motu Myrrha mentemque sapiente&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Moenia ego &lt;em&gt;liquidis&lt;/em&gt; ire. Illa tempore altior. Quod victa modo quo quae, opem
+vultus doloris longa, offensa, quoque vox sua!&lt;/p&gt;
+
+&lt;h3 id=&quot;tu-induit-adsunt-rursusque-exercebat-animam-restabat&quot;&gt;Tu induit adsunt rursusque exercebat animam restabat&lt;/h3&gt;
+
+&lt;p&gt;Lorem markdownum mater. Haec tulit qui, at ducar furori quid Cephisius &lt;strong&gt;ut
+nunc&lt;/strong&gt;. Et vicinaque humus veterum quantum diu facit quidquid pignora fregit,
+non aut.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Attonuit Thoona Dianae gratissima crescit locus una silvis manibus durare
+habuit. Terrae &lt;strong&gt;rates&lt;/strong&gt; pio etiam non lacrimas et illa. Est reclusa tectus
+celsa strinxit: ab pennis fingant interdum auspiciis admonitus
+dixit; missos Peleus sedibus. Relicta annos aequor invicti.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;nomine-saepe-visi-aristis-amythaone&quot;&gt;Nomine saepe visi aristis Amythaone&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Possit&lt;/strong&gt; vox insignia profugi interdictae &lt;strong&gt;feri&lt;/strong&gt;, ut stricto manus: est non
+dum. Haec Triopeida claudunt, posse &lt;em&gt;relinquit&lt;/em&gt;, sed quoque aras.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rabie committitur in gaudia dulcis&lt;/li&gt;
+  &lt;li&gt;Hosti miserabilis nostri addit alto nostri fallaces&lt;/li&gt;
+  &lt;li&gt;Palles ille angues est quidem secessit tulit&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;radicibus-pariter-miratur-sine-tiresiae-cornuaque-inclusit&quot;&gt;Radicibus pariter miratur sine Tiresiae cornuaque inclusit&lt;/h2&gt;
+
+&lt;p&gt;Pugnat aera, simul nescis imagine emissi. Seu gestu in suis feruntque recolligis
+recognoscit forent iussit ab Bacchi fuerat!&lt;/p&gt;
+
+&lt;p&gt;Suis semper prius digna &lt;em&gt;proles&lt;/em&gt;, solet nisi, quod incisa. Qua forent serasque
+his! Mea inter iniit reluxit cruentos tura: fuit forte cura locat
+arborea rus iamque pennas praedelassat et venite oculos mare. Precibus virili
+Iovemque.&lt;/p&gt;
+
+&lt;p&gt;Quam fuere fieri Attica finem temperat inpubibus creatus hosti. Est lumina aera
+abest, &lt;strong&gt;discrimine vivaque adspexerit&lt;/strong&gt; usu est cetera.&lt;/p&gt;</content><author><name>Thomas ILLIET</name></author><category term="lorem" /><summary type="html">Lorem markdownum illum effigiem relictis et exspectanda munera. Figuris non illi Diti pietas populusque falsa paternas externos arma credensque murmur.</summary></entry><entry><title type="html">Trementia deus facti</title><link href="/2019/01/04/trementia-deus-facti.html" rel="alternate" type="text/html" title="Trementia deus facti" /><published>2019-01-04T00:00:00+00:00</published><updated>2019-01-04T00:00:00+00:00</updated><id>/2019/01/04/trementia-deus-facti</id><content type="html" xml:base="/2019/01/04/trementia-deus-facti.html">&lt;p&gt;Lorem markdownum magni exsaturanda et possit viribus: gravatum subiere ali
+taurorum levavit corpore dum Triviae seque sua. Interdum finiat
+inducere et ames, tenent deieci sentit Parcarummanibus
+creatis tertia nova nuper; conata. Feris desierim discubuere et remisit gaudent
+fretumque vidit mundi coniunx, et saepe curvatura luctu.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Silentia caelestia aevi&lt;/li&gt;
+  &lt;li&gt;Mihi vela donaverit nunc&lt;/li&gt;
+  &lt;li&gt;Colit adde Atreus et tum quamquam latet&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Quo nitere, parentis amanti Romuleos clamantia, &lt;em&gt;non genus dixere&lt;/em&gt; requiescere.
+Et artus hostile templis fusca: sit fuit sacrum opacas fortissimus unda
+desperat, onerosa a aetatem satis cernens. Cura tribuente aeternum exercent
+fugiens, est et gravis, dictis, sororum alter: est quam plenaque pectore nam?
+Sui in cervi videri Phoebus; mortale &lt;em&gt;illam Indigetem&lt;/em&gt; ipsi &lt;strong&gt;Desierat&lt;/strong&gt;! Est
+nulla ora templa sentiet discedens certamina manuque, tetigere tribuisse et
+dictis.&lt;/p&gt;
+
+&lt;h2 id=&quot;mea-fallitque-imagine&quot;&gt;Mea fallitque imagine&lt;/h2&gt;
+
+&lt;p&gt;Expugnacior sati, iam sitae dis est tenaci colore Leucothoe ut. Agmen in altera,
+parcere percussa, in legit prohibente ipsos. Letifera telum aquis tamen Tellus
+cumulemus vestros insequeris fingens duritiem tam quod fuerant, inhospita
+dilectaque? Frontis veniam, facibus sic et adspicit ignibus nobis: recepta nisi
+illa qui?&lt;/p&gt;
+
+&lt;p&gt;Peti pius est aethere, pantherarum locus in libera Aeetias, redeuntia nec.
+Aperire cursum difficilis conceptus voce Phaethusa salve
+considere lumina unco. Ducebat et aversus maligno fixis mecum profunda. Humo
+aut: igitur temptat silentum, aufer morte &lt;em&gt;anima&lt;/em&gt;, dum.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sic quaeritur; origo carpe pectore, resolutum sine, perpessi et &lt;strong&gt;atque
+quantas&lt;/strong&gt; tabuerant presso prodere in omnes. Quosque purpureae adest, quam
+&lt;em&gt;luminis&lt;/em&gt;. Nunc sensit foedat fueris?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Casu herbas noctis nec fallunt detque! Manifesta humum tyranni, matrum illud
+rident horto abstulerit ignesque operis reverentia Theseus agricolis timidas
+Avernae deducere ad. Ibi sed amnis inridet hiemsque!&lt;/p&gt;
+
+&lt;h3 id=&quot;suum-ore-tuum&quot;&gt;Suum ore tuum&lt;/h3&gt;
+
+&lt;p&gt;Lorem markdownum &lt;em&gt;tuum&lt;/em&gt;; est petita, armis induit. Aures mihi, sub ad dives erat
+alias turpes orbes rugis, buxi Anaxareten. Proripit ipsos; post, nec Mysum
+salutat tempusque meminere.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Nec seris sentit licet restat posse, aeno sub bipennis spernimus? Commemorare
+respondit lumina orbem, quodvis de funesta illic postibus non rotae patriam
+decem &lt;strong&gt;aequora fiducia&lt;/strong&gt;, tendunt.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;caesar-pulcherrima-tectus-trementi-memorant&quot;&gt;Caesar pulcherrima tectus trementi memorant&lt;/h2&gt;
+
+&lt;p&gt;Dedit mihi coniunx pectora sibi. Lumina in boves gemina nobis
+servare exemplis quo, est!&lt;/p&gt;
+
+&lt;p&gt;Auras soleat removerat me orbem sibi si iam hinc levarit. Modo vincis, in loco
+telas in viaeque terra consilioque aquas nec corpus inlisit. Intus quas &lt;em&gt;non
+pariturae&lt;/em&gt; natorum, processisse ullum me &lt;em&gt;sororem&lt;/em&gt; periturus procul, noscere iam
+nullo derectos Troica! Tamen pectore tum vinci vincis nunc; bina accessit
+fugiunt Phlegon igne auras certas exstinctus &lt;em&gt;matris&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Marmoreas lata mihi letum plangore pectora&lt;/li&gt;
+  &lt;li&gt;Illa laesae claro erectus attonitus fecit&lt;/li&gt;
+  &lt;li&gt;Cavus sola dominis&lt;/li&gt;
+  &lt;li&gt;Undae ne quoque conplexus Tritonia illa nectar&lt;/li&gt;
+  &lt;li&gt;Oculos ego plenum intercipe gemmis Boeotiaque dicere&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;lacrimae-iam-solutum-nocendo-venientis-ut-iuvencae&quot;&gt;Lacrimae iam solutum nocendo venientis ut iuvencae&lt;/h3&gt;
+
+&lt;p&gt;Adflicti enim! Praebet precor postquam luce fiunt tamquam di natura memor sive
+densior hic munus trahunt e.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ora signa limite&lt;/li&gt;
+  &lt;li&gt;Siste dubito amore simulat simul Aeneaden corpore&lt;/li&gt;
+  &lt;li&gt;Detis bis divino exsternata tacuit&lt;/li&gt;
+  &lt;li&gt;Quis pericula malas&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Eadem &lt;strong&gt;mensam pictis&lt;/strong&gt; vimque imagine oblita fluentum currus iras tamen munere
+in a corpus querulas, populo? Fronte post mundus crudeles patrumque, deus et
+maior motibus, et. Aurora redde habitandae conferre dolorque cum loca puppis
+aliis coma numen differt, quod Thessala teneo. Ad umbra, &lt;em&gt;dant&lt;/em&gt;, Nox conplexibus
+ubi posset at corpora humum, sola levis, nec.&lt;/p&gt;</content><author><name>Thomas ILLIET</name></author><category term="lorem" /><summary type="html">Lorem markdownum magni exsaturanda et possit viribus: gravatum subiere ali taurorum levavit corpore dum Triviae seque sua. Interdum finiat inducere et ames, tenent deieci sentit Parcarummanibus creatis tertia nova nuper; conata. Feris desierim discubuere et remisit gaudent fretumque vidit mundi coniunx, et saepe curvatura luctu.</summary></entry><entry><title type="html">Ubi ipsi misit ecquid</title><link href="/2019/01/03/ubi-ipsi-misit-ecquid.html" rel="alternate" type="text/html" title="Ubi ipsi misit ecquid" /><published>2019-01-03T00:00:00+00:00</published><updated>2019-01-03T00:00:00+00:00</updated><id>/2019/01/03/ubi-ipsi-misit-ecquid</id><content type="html" xml:base="/2019/01/03/ubi-ipsi-misit-ecquid.html">&lt;p&gt;Lorem markdownum visae et barbara equidem. Et humum tempore manibusque frater in
+eodem te litat Hactenus quoque frontem interdum; o, tale ad
+ferro. Arceat positoque pulchro terram corpore, non Alcide parente flumen, orbem
+quoque. Socero hoc ripae colonos vasto, optima spectans Phaethonta inperfectus
+sumpserat tincta ad furor faciendis mixtis pectora et funesta, sub.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Saevi dumque eodem casias Aeolides vincit harpe&lt;/li&gt;
+  &lt;li&gt;Qua pectore consueta&lt;/li&gt;
+  &lt;li&gt;Hoc non deos damnantem madida metus&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;quorum-et-perfida-moveat-et-invecta-erit&quot;&gt;Quorum et perfida moveat et invecta erit&lt;/h2&gt;
+
+&lt;p&gt;Imitamina actorum! Boves sed ferunt, pia genus inmitis aeque. Me mortis brevis
+corpus clamanti natura lustraverat asper, et esse; non egressus levis tractaque.
+Uberaque hasta ignipedum, mota repulsa ipse genetrix guttae, quoque. Radix
+sumus, lupo dixi simul sanguine vanaque modo, quod Circe officium, teneat
+innixus, tenentem.&lt;/p&gt;
+
+&lt;p&gt;Quas illis facinus inmemor foliis pressit nomine, illa umeros mentem mare pedum.
+Dignissime carpe sanguine Dianae ille, desistere parte inductaque Schoeneia
+torvo, egit &lt;em&gt;currus&lt;/em&gt;. Zancleia meminisse parabat frena dum condiderat quamquam
+pingebat quaecumque fortis. Viris morantur que speratque dolor &lt;em&gt;percusso&lt;/em&gt;, acta
+capillos vetustas auras et derat fumo: procubuit telo.&lt;/p&gt;
+
+&lt;h2 id=&quot;sonanti-undae-te-canam-linguaque-quoque&quot;&gt;Sonanti undae te canam linguaque quoque&lt;/h2&gt;
+
+&lt;p&gt;Manus sed matrem referens nigri hostiliter ab veniunt
+latum carmine undas, modo testata timor et pectusque incursurus parte. Canibusve
+operiri velamenta moenibus ventis: nec res harenas et Somne petentes, ut.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tam modo parte per&lt;/li&gt;
+  &lt;li&gt;Magnum tantum defendentia gradibus&lt;/li&gt;
+  &lt;li&gt;Litorei puellae obstipuere apte&lt;/li&gt;
+  &lt;li&gt;Fertilis nomine&lt;/li&gt;
+  &lt;li&gt;Penetravit templa&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Capiti diffudit recordor incertae. Cladis herbae dederat bene nostro, ora tellus
+magnae, mirata iacere nodus nova tibi, oras est, fila!&lt;/p&gt;
+
+&lt;h2 id=&quot;persea-cum-sine&quot;&gt;Persea cum sine&lt;/h2&gt;
+
+&lt;p&gt;Lorem markdownum peioris paulatim victor adspicit; ex cernes pericula, et
+&lt;strong&gt;iugales in exilio&lt;/strong&gt;, proles? Sive fassaque ne nymphas, ignobilitate, ossibus
+opes; aequoreos habebam! Ignifero deque proelia in Graecia dicta, mihi
+&lt;em&gt;pluviaque&lt;/em&gt; agant ille proles perosus sermone tenuis ore
+auxilium vestigia atque tecta. Comitata Hymenaeus vultu inficit fallit vos aut
+mare tot.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Humum matrem ponit modo occidet regemque ad inter pervenit quantum, non. Et
+murmur altera mersaeque viribus, huius formam consanguineas nocebant, ait nec
+confessam dabit. Erat &lt;strong&gt;fontis se&lt;/strong&gt; sanguine fiducia pulsat fama, aurum tibi
+arma, sub!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Subeunt et antro ut harenas oscula erat, cui, vix ad corpora, videbis. Timorem
+suos nec inhumata nec luna habet at ineamus erigor quae furtum vomens in
+fundunt.&lt;/p&gt;
+
+&lt;h3 id=&quot;sagitta-in-pondere-quia-invideatis-est&quot;&gt;Sagitta in pondere quia invideatis est&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Modo solis&lt;/strong&gt; aniles, tantum spectantur Verque, putat tectoque, et deferre
+dominis nubibus femineusque facit. Qui tendit omnes videret regem. Moenia ne
+potest adhibent quae: non orbem mediumque pedem; nec fecit
+Romane obstitit veros myricae inania Luna? In ibi utque nec frustra audax
+tacita, acuto quid ille. Aliquod agnus, equos illa imagine praecessit lucis ait
+creatis maeonis corruat patuisse lumina praecepta inque.&lt;/p&gt;
+
+&lt;p&gt;Est opes corpora adfata texique tergoris seque; putatur nec arduus verba diversi
+tu sonuere magni ardeat flens ab. Alis et quotiens Coniugis in velox bracchia
+rogantem caliginis &lt;strong&gt;petens&lt;/strong&gt;. Elegit &lt;em&gt;sumit Telamoniades&lt;/em&gt; melior cunctis
+saecula. Esse voluitque saxaque onerosior faveant auras, silentibus barbara
+pharetras nunc velint iniere in harenosae male tenuissimus pectoris templis
+dulce.&lt;/p&gt;
+
+&lt;h3 id=&quot;parentem-quaque-tibi-neptune-omnis&quot;&gt;Parentem quaque tibi Neptune omnis&lt;/h3&gt;
+
+&lt;p&gt;Piget retexi curis corpora, moverat certamine nudaque peccavere mearumin Aegides
+novas indefletaeque pars commissaque. &lt;em&gt;Ilia Arcesius quae&lt;/em&gt; clamato: sanguinis
+superest, variat contiguas membra, ponunt obstipui perdere.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Caecum volans laborat latens&lt;/li&gt;
+  &lt;li&gt;Fuit hoc mutatur deus per tristis ramos&lt;/li&gt;
+  &lt;li&gt;Despicitur triumphos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Illo et, sibi et, ore quaterque armorum maior precor aetheriis tenetque. Inde in
+clamavit cupit, Alba vultuque, huic iacet spectare nec sicut ab mora nec sed
+oculus.&lt;/p&gt;
+
+&lt;p&gt;Multa ut prohibet Attis, quod, ipsum inornatos et Martem amnis lintea conditus
+adsum torva se &lt;em&gt;tenui locorum&lt;/em&gt;. Celebrant adnuit, qui porrecta tamen cecidit
+mugitus et novitate, nulla! Monet leves titubat temptataque colubrae &lt;strong&gt;et
+magni&lt;/strong&gt; et paelice summae enim includit aurora conata. Percussa cultor circumque
+arma longis: cornua Gryneus, non et.&lt;/p&gt;</content><author><name>Thomas ILLIET</name></author><category term="lorem" /><summary type="html">Lorem markdownum visae et barbara equidem. Et humum tempore manibusque frater in eodem te litat Hactenus quoque frontem interdum; o, tale ad ferro. Arceat positoque pulchro terram corpore, non Alcide parente flumen, orbem quoque. Socero hoc ripae colonos vasto, optima spectans Phaethonta inperfectus sumpserat tincta ad furor faciendis mixtis pectora et funesta, sub.</summary></entry></feed>

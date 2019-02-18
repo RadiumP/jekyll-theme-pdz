@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Basic -->
+    <title>Jekyll Settings - PowerShell du Zéro</title>
+    <meta name="author" content="Thomas ILLIET">
+    <meta name="description" content="Jekyll Settings">
+    <meta name="keywords" content="jekyll, tips">
+    <link rel="icon" href="/assets/img/favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Jekyll Settings - PowerShell du Zéro">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:description" content="Jekyll theme for my organization">
+    <meta property="og:site_name" content="PowerShell du Zéro">
+    <meta property="og:image" content="/uploads/header-04-preview.jpg" />
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="article:published_time" content="2019-02-12 00:00:00 +0000">
+    <meta property="article:tag" content="jekyll"><meta property="article:tag" content="tips">
+
+    <!-- Responsive  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="PDZ">
+    <link rel="apple-touch-icon" href="/assets/img/logo-apple.png" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/github-markdown.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+
+    <!-- Javascript -->
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+
+    <style>
+    .markdown-body .anchor{
+        float: left;
+        margin-top: -8px;
+        margin-left: -20px;
+        padding-right: 4px;
+        line-height: 1;
+        opacity: 0;
+    }
+
+    .markdown-body .anchor .anchor-icon{
+        font-size: 15px
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        let nodes = document.querySelector(".markdown-body").querySelectorAll("h1,h2,h3")
+        for(let node of nodes) {
+            var anchor = document.createElement("a")
+            var anchorIcon = document.createElement("i")
+            anchorIcon.setAttribute("class", "fa fa-anchor fa-lg anchor-icon")
+            anchorIcon.setAttribute("aria-hidden", true)
+            anchor.setAttribute("class", "anchor")
+            anchor.setAttribute("href", "#" + node.getAttribute("id"))
+
+            anchor.onmouseover = function() {
+                this.style.opacity = "0.4"
+            }
+
+            anchor.onmouseout = function() {
+                this.style.opacity = "0"
+            }
+
+            anchor.appendChild(anchorIcon)
+            node.appendChild(anchor)
+        }
+    })
+</script>
+
+</head>
+
+
+<body>
+    <header class="g-header">
+    <div class="g-logo">
+        <a href="/"></a>
+    </div>
+    <nav class="g-nav">
+        <ul>
+            
+            
+            <li><a href='/'>home</a></li>
+            
+            
+            <li class='has-sub'>
+                <a href='#'>article</a>
+                <ul>
+                    
+                    
+                    
+                        <li><a href='/2019/02/14/welcome-to-jekyll.html'>Welcome to Jekyll!</a></li>
+                    
+                    
+                    
+                        <li><a href='/2019/02/13/quick-markdown-example.html'>Markdown Example</a></li>
+                    
+                    
+                    
+                        <li><a href='/2019/02/12/jekyll-settings.html'>Jekyll Settings</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            <li class='has-sub'>
+                <a href='#'>tag</a>
+                <ul>
+                    
+                    
+                    
+                        <li><a href='/tags/jekyll/'>Jekyll</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/tips/'>Tips</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/markdown/'>Markdown</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/example/'>Example</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/welcome/'>Welcome</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+    
+
+    <header class="g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover"
+        data-theme="default">
+        <div class="post-wrapper">
+            <div class="post-tags">
+                
+                
+                <a href="/tags/jekyll/" class="post-tag">jekyll</a>
+                
+                <a href="/tags/tips/" class="post-tag">tips</a>
+                
+                
+            </div>
+            <h1>Jekyll Settings</h1>
+            
+            <div class="post-meta">
+                <span class="post-meta-item"><i class="far fa-user-circle"></i> Unknown IT</span>
+                <span class="post-meta-item"><i class="far fa-clock"></i>
+                    <time datetime="19-02-12">12 Feb 2019</time>
+                </span>
+                <span class="post-meta-item">
+                    <a href="https://github.com/Powershell-du-Zero/jekyll-theme-pdz/blob/master/_posts/2019-02-12-jekyll-settings.md">
+                        <i class="fab fa-github"></i> Modifier cette page
+                    </a>
+                </span>
+            </div>
+        </div>
+        
+        <div class="filter"></div>
+        <div class="post-cover" style="background: url('/uploads/header-04-cover.jpg') center no-repeat; background-size: cover;"></div>
+        
+    </header>
+
+    <div class="post-content visible"><div class="toc-container">
+            <div class="side-toc">
+                <h3 class="title">
+                    <a class="toc-toggle" href="#">Dans cet article</a>
+                </h3>
+                <ul class="toc-body"></ul>
+            </div>
+        </div>
+        
+        
+        <article class="markdown-body">
+            <p>Here’s a handy guide to easily setting up your Jekyll website</p>
+
+<h1 id="add-your-favicons">Add your favicons</h1>
+
+<ol>
+  <li>Head over to <a href="https://realfavicongenerator.net">https://realfavicongenerator.net</a> to add your own favicons.</li>
+  <li>Load your favicons in the following location <code class="highlighter-rouge">/assets/img/favicon.ico</code></li>
+</ol>
+
+<h1 id="table-of-content">Table of content</h1>
+
+<p>If you don’t want to display table of content for a particular post/page you can disable them by adding <code class="highlighter-rouge">toc: false</code> to that post’s or page YAML Front Matter.</p>
+
+<h1 id="enabling-comments-via-disqus">Enabling comments (via Disqus)</h1>
+
+<p>Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.</p>
+
+<p>To enable it, add the following lines to your Jekyll site:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Comments (via Disqus)</span>
+<span class="na">comments</span><span class="pi">:</span>
+  <span class="na">status</span><span class="pi">:</span> <span class="no">false</span>
+  <span class="na">shortname</span><span class="pi">:</span> <span class="s1">'</span><span class="s">powershell-du-zero'</span>
+</code></pre></div></div>
+
+<p>You can find out more about Disqus’ shortnames <a href="https://help.disqus.com/installation/whats-a-shortname">here</a>.</p>
+
+<p>If you don’t want to display comments for a particular post you can disable them by adding <code class="highlighter-rouge">comments: false</code> to that post’s YAML Front Matter.</p>
+
+<h1 id="social-networks">Social networks</h1>
+
+<p>You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your config.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Author settings</span>
+<span class="na">author</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">Thomas ILLIET</span>
+  <span class="na">avatar</span><span class="pi">:</span> <span class="s">demo/img/avatar-thomas-illiet.jpg</span>
+  <span class="na">bio</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">social</span><span class="pi">:</span>
+    <span class="na">twitter</span><span class="pi">:</span>
+      <span class="na">icon</span><span class="pi">:</span> <span class="s">fab fa-twitter</span>
+      <span class="na">link</span><span class="pi">:</span> <span class="s">https://twitter.com/PowershellZ</span>
+    <span class="na">github</span><span class="pi">:</span>
+      <span class="na">icon</span><span class="pi">:</span> <span class="s">fab fa-github</span>
+      <span class="na">link</span><span class="pi">:</span> <span class="s">https://github.com/Powershell-du-Zero</span>
+    <span class="na">linkedin</span><span class="pi">:</span>
+      <span class="na">icon</span><span class="pi">:</span> <span class="s">fab fa-linkedin</span>
+      <span class="na">link</span><span class="pi">:</span> <span class="s">https://www.linkedin.com/company/powershell-du-zero/</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>To find more icon, you can visit the website <a href="https://fontawesome.com/">Font Awesome</a></p>
+</blockquote>
+
+<h1 id="enabling-google-analytics">Enabling Google Analytics</h1>
+
+<p>To enable Google Analytics, add the following lines to your Jekyll site:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Fill in your Google Analytics ID to track your website using GA</span>
+<span class="na">google_analytics</span><span class="pi">:</span> <span class="s">UA-NNNNNNNN-N</span>
+</code></pre></div></div>
+
+<h1 id="add-tags">Add tags</h1>
+
+<p>To add tags, create a new <code class="highlighter-rouge">yml</code> file in <code class="highlighter-rouge">_blog_tags</code> directory with the following lines :</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Markdown</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">love it</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/tags/markdown/"</span>
+<span class="na">header-img</span><span class="pi">:</span> <span class="s">/uploads/header-01.jpg</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>The parameters “<strong>description</strong>” &amp; “<strong>header-img</strong>” are optional, they are used to customize the pages of tags.</p>
+
+        </article>
+    </div>
+
+    <section class="author-detail">
+        <section class="post-footer-item author-card">
+            <div class="avatar">
+                <img src="/uploads/avatar-unknown-it.jpg" alt="avatar">
+            </div>
+            <div class="author-name" rel="author">Unknown IT</div>
+            <div class="bio">
+                <p>You can't see me, yet I'm there</p>
+            </div>
+            
+        </section>
+        <section class="post-footer-item read-next">
+            
+            <div class="read-next-item">
+                <a href="/2019/02/13/quick-markdown-example.html" class="read-next-link"></a>
+                <section>
+                    <span>Quick Markdown Example</span>
+                    <p>This is designed as a quick reference and allows you to e...</p>
+                </section>
+                
+                <div class="filter"></div>
+                <img src="/uploads/header-03-preview.jpg" alt="Quick Markdown Example">
+                
+            </div>
+            
+
+            
+            <div class="read-next-item">
+                <a href="/2019/01/09/caelestia-vestigia-venam.html" class="read-next-link"></a>
+                <section>
+                    <span>Caelestia vestigia venam</span>
+                    <p>Lorem markdownum eras caput una quod: haec non Latini,tep...</p>
+                </section>
+                
+                <div class="filter"></div>
+                <img src="/uploads/header-05-preview.jpg" alt="Caelestia vestigia venam">
+                
+            </div>
+            
+        </section><section class="post-footer-item comment">
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = '/2019/02/12/jekyll-settings.html';
+            this.page.identifier = '/2019/02/12/jekyll-settings.html';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section></section>
+
+    <footer class="g-footer">
+  <section>PowerShell du Zéro ©
+  
+  
+    2018
+    -
+  
+  2019
+  </section>
+  <section>Powered by <a href="//jekyllrb.com">Jekyll</a></section>
+</footer>
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-133213587-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+
+
+    <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/index.min.js"></script><script src="/assets/js/nav.min.js"></script>
+    <script src="/assets/js/toc.min.js"></script></body>
+</html>

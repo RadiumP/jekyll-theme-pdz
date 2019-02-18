@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Basic -->
+    <title>Caelestia vestigia venam - PowerShell du Zéro</title>
+    <meta name="author" content="Thomas ILLIET">
+    <meta name="description" content="Caelestia vestigia venam">
+    <meta name="keywords" content="lorem">
+    <link rel="icon" href="/assets/img/favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Caelestia vestigia venam - PowerShell du Zéro">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:description" content="Jekyll theme for my organization">
+    <meta property="og:site_name" content="PowerShell du Zéro">
+    <meta property="og:image" content="/uploads/header-05-preview.jpg" />
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="article:published_time" content="2019-01-09 00:00:00 +0000">
+    <meta property="article:tag" content="lorem">
+
+    <!-- Responsive  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="PDZ">
+    <link rel="apple-touch-icon" href="/assets/img/logo-apple.png" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/github-markdown.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+
+    <!-- Javascript -->
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+
+    <style>
+    .markdown-body .anchor{
+        float: left;
+        margin-top: -8px;
+        margin-left: -20px;
+        padding-right: 4px;
+        line-height: 1;
+        opacity: 0;
+    }
+
+    .markdown-body .anchor .anchor-icon{
+        font-size: 15px
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        let nodes = document.querySelector(".markdown-body").querySelectorAll("h1,h2,h3")
+        for(let node of nodes) {
+            var anchor = document.createElement("a")
+            var anchorIcon = document.createElement("i")
+            anchorIcon.setAttribute("class", "fa fa-anchor fa-lg anchor-icon")
+            anchorIcon.setAttribute("aria-hidden", true)
+            anchor.setAttribute("class", "anchor")
+            anchor.setAttribute("href", "#" + node.getAttribute("id"))
+
+            anchor.onmouseover = function() {
+                this.style.opacity = "0.4"
+            }
+
+            anchor.onmouseout = function() {
+                this.style.opacity = "0"
+            }
+
+            anchor.appendChild(anchorIcon)
+            node.appendChild(anchor)
+        }
+    })
+</script>
+
+</head>
+
+
+<body>
+    <header class="g-header">
+    <div class="g-logo">
+        <a href="/"></a>
+    </div>
+    <nav class="g-nav">
+        <ul>
+            
+            
+            <li><a href='/'>home</a></li>
+            
+            
+            <li class='has-sub'>
+                <a href='#'>article</a>
+                <ul>
+                    
+                    
+                    
+                        <li><a href='/2019/02/14/welcome-to-jekyll.html'>Welcome to Jekyll!</a></li>
+                    
+                    
+                    
+                        <li><a href='/2019/02/13/quick-markdown-example.html'>Markdown Example</a></li>
+                    
+                    
+                    
+                        <li><a href='/2019/02/12/jekyll-settings.html'>Jekyll Settings</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            <li class='has-sub'>
+                <a href='#'>tag</a>
+                <ul>
+                    
+                    
+                    
+                        <li><a href='/tags/jekyll/'>Jekyll</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/tips/'>Tips</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/markdown/'>Markdown</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/example/'>Example</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/welcome/'>Welcome</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+    
+
+    <header class="g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover"
+        data-theme="default">
+        <div class="post-wrapper">
+            <div class="post-tags">
+                
+                
+                <a href="/tags/lorem/" class="post-tag">lorem</a>
+                
+                
+            </div>
+            <h1>Caelestia vestigia venam</h1>
+            
+            <div class="post-meta">
+                <span class="post-meta-item"><i class="far fa-user-circle"></i> Unknown IT</span>
+                <span class="post-meta-item"><i class="far fa-clock"></i>
+                    <time datetime="19-01-09">09 Jan 2019</time>
+                </span>
+                <span class="post-meta-item">
+                    <a href="https://github.com/Powershell-du-Zero/jekyll-theme-pdz/blob/master/_posts/2019-01-09-caelestia-vestigia-venam.md">
+                        <i class="fab fa-github"></i> Modifier cette page
+                    </a>
+                </span>
+            </div>
+        </div>
+        
+        <div class="filter"></div>
+        <div class="post-cover" style="background: url('/uploads/header-05-cover.jpg') center no-repeat; background-size: cover;"></div>
+        
+    </header>
+
+    <div class="post-content visible"><div class="toc-container">
+            <div class="side-toc">
+                <h3 class="title">
+                    <a class="toc-toggle" href="#">Dans cet article</a>
+                </h3>
+                <ul class="toc-body"></ul>
+            </div>
+        </div>
+        
+        
+        <article class="markdown-body">
+            <p>Lorem markdownum eras caput una quod: haec non Latini,
+tepidisque qui concipit. Dissimilem contigerant socii arma his pectoraque vixque
+leti tactusque induta <em>arduus defuerunt</em>, quoniam contigit morte, haec et
+aditus. Cervi Troiae est nudaverat; heros nunc meos id subiectaque ingemit
+egredior sacris sive sopire quibus antiquo: canis.</p>
+
+<ul>
+  <li>Ferox et vos fac oves umerum</li>
+  <li>Hic et Quo est Thracia bellator inmota</li>
+  <li>Tenens turbamve at sensit in copia nullo</li>
+  <li>Nunc vix mensura adspicias animal Oceano ab</li>
+  <li>Oras nec undas opem vivax maximus vaporibus</li>
+</ul>
+
+<h2 id="curva-haec-arbore">Curva haec arbore</h2>
+
+<p>Visura nutu nobis, Ossa quam avem cunasque me <em>labens</em> mare referebat adde nec
+altus extulit velaturque deus gaudere acta. Ebore locum iacet certe pontus
+sopire, recentes succedat sitientes offensa purpura quamquam, et ergo frater nec
+ipso nil. Per formas et colla canos; populusque Haemus egens animorum vulnere
+victrices ac leges <em>angusta</em>. Et carens nempe sapienter rivus incerti sanctique
+<strong>Perseidos</strong> restabat quaesitis senserunt referitur?</p>
+
+<h2 id="habet-iani-mota-inque">Habet Iani Mota inque</h2>
+
+<p>Dedit iuvenem precando ille quaesiti inde Aiacem? Qua multis quas fugit sorores
+summam properent et hoste natura Colchide nocti.</p>
+
+<ul>
+  <li>Et probetne orbem</li>
+  <li>Dixit cum tamen me</li>
+  <li>Taurorum parentis sileam at turpiter totis</li>
+</ul>
+
+<h2 id="undis-ergo">Undis ergo</h2>
+
+<p>Praeteriti admovet quod traxere laudis nemorumque sufficit siquis umida
+lacrimantia ne memor propiora sanguine Dixerat moram, tendimus
+verba. Parentem quod audet septem perosa ut idemque parat in
+a talibus armos Proserpina gaudia. Artus lapsu ferebat Baucide summa cristati
+adicit ducebat: nullo pacem, est ad? Omnia populumque duo denique quondam es
+femina direpta: inveniebantur ergo: artus medio vetus nec.</p>
+
+<h2 id="ferro-armeniae-bracchia">Ferro Armeniae bracchia</h2>
+
+<p>Saetis iam illam creati ministro: illi quia corpore ubi semper superorum tempora
+ferox, lumina munera saepe. Per ad vultus iam soporem erant. Ruit avus unde sed
+nomina epota sub senis, perstant gloria; et.</p>
+
+<blockquote>
+  <p>Loco utqueinterea quale caelumque, memor est sed nec;
+tu, pavonibus offensi pectora. Sub atque arguitur spargere flores invenio
+ultus propiore?</p>
+</blockquote>
+
+<p>Tubas veni sua facundia medicas proles, committitur fiunt, raptor praeterque
+tollit vobis. Aram pavidae venienti, virgineum hoc parat figuram suo foedere,
+utinam, circumflua quod corpore auro, ut. Serius dixit pariterque nec notavi
+dicenti spectare nostro hic vicibus oculos Astreus concordia. Pinuque genitor
+vis ipsa quinque inponit. Et quae illa, abit pater!</p>
+
+        </article>
+    </div>
+
+    <section class="author-detail">
+        <section class="post-footer-item author-card">
+            <div class="avatar">
+                <img src="/uploads/avatar-unknown-it.jpg" alt="avatar">
+            </div>
+            <div class="author-name" rel="author">Unknown IT</div>
+            <div class="bio">
+                <p>You can't see me, yet I'm there</p>
+            </div>
+            
+        </section>
+        <section class="post-footer-item read-next">
+            
+            <div class="read-next-item">
+                <a href="/2019/02/12/jekyll-settings.html" class="read-next-link"></a>
+                <section>
+                    <span>Jekyll Settings</span>
+                    <p>Here’s a handy guide to easily setting up your Jekyll web...</p>
+                </section>
+                
+                <div class="filter"></div>
+                <img src="/uploads/header-04-preview.jpg" alt="Jekyll Settings">
+                
+            </div>
+            
+
+            
+            <div class="read-next-item">
+                <a href="/2019/01/08/suspicere-capacibus-nomine-fines.html" class="read-next-link"></a>
+                <section>
+                    <span>Suspicere capacibus nomine fines</span>
+                    <p>Lorem markdownum periuria tamen nubibus vagas aquarum sum...</p>
+                </section>
+                
+                <div class="filter"></div>
+                <img src="/uploads/header-05-preview.jpg" alt="Suspicere capacibus nomine fines">
+                
+            </div>
+            
+        </section><section class="post-footer-item comment">
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = '/2019/01/09/caelestia-vestigia-venam.html';
+            this.page.identifier = '/2019/01/09/caelestia-vestigia-venam.html';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section></section>
+
+    <footer class="g-footer">
+  <section>PowerShell du Zéro ©
+  
+  
+    2018
+    -
+  
+  2019
+  </section>
+  <section>Powered by <a href="//jekyllrb.com">Jekyll</a></section>
+</footer>
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-133213587-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+
+
+    <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/index.min.js"></script><script src="/assets/js/nav.min.js"></script>
+    <script src="/assets/js/toc.min.js"></script></body>
+</html>

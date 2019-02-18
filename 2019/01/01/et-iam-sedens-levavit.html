@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Basic -->
+    <title>Et iam sedens levavit - PowerShell du Zéro</title>
+    <meta name="author" content="Thomas ILLIET">
+    <meta name="description" content="Et iam sedens levavit">
+    <meta name="keywords" content="lorem">
+    <link rel="icon" href="/assets/img/favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Et iam sedens levavit - PowerShell du Zéro">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:description" content="Jekyll theme for my organization">
+    <meta property="og:site_name" content="PowerShell du Zéro">
+    <meta property="og:image" content="/uploads/header-05-preview.jpg" />
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="article:published_time" content="2019-01-01 00:00:00 +0000">
+    <meta property="article:tag" content="lorem">
+
+    <!-- Responsive  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="PDZ">
+    <link rel="apple-touch-icon" href="/assets/img/logo-apple.png" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/github-markdown.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+
+    <!-- Javascript -->
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+
+    <style>
+    .markdown-body .anchor{
+        float: left;
+        margin-top: -8px;
+        margin-left: -20px;
+        padding-right: 4px;
+        line-height: 1;
+        opacity: 0;
+    }
+
+    .markdown-body .anchor .anchor-icon{
+        font-size: 15px
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        let nodes = document.querySelector(".markdown-body").querySelectorAll("h1,h2,h3")
+        for(let node of nodes) {
+            var anchor = document.createElement("a")
+            var anchorIcon = document.createElement("i")
+            anchorIcon.setAttribute("class", "fa fa-anchor fa-lg anchor-icon")
+            anchorIcon.setAttribute("aria-hidden", true)
+            anchor.setAttribute("class", "anchor")
+            anchor.setAttribute("href", "#" + node.getAttribute("id"))
+
+            anchor.onmouseover = function() {
+                this.style.opacity = "0.4"
+            }
+
+            anchor.onmouseout = function() {
+                this.style.opacity = "0"
+            }
+
+            anchor.appendChild(anchorIcon)
+            node.appendChild(anchor)
+        }
+    })
+</script>
+
+</head>
+
+
+<body>
+    <header class="g-header">
+    <div class="g-logo">
+        <a href="/"></a>
+    </div>
+    <nav class="g-nav">
+        <ul>
+            
+            
+            <li><a href='/'>home</a></li>
+            
+            
+            <li class='has-sub'>
+                <a href='#'>article</a>
+                <ul>
+                    
+                    
+                    
+                        <li><a href='/2019/02/14/welcome-to-jekyll.html'>Welcome to Jekyll!</a></li>
+                    
+                    
+                    
+                        <li><a href='/2019/02/13/quick-markdown-example.html'>Markdown Example</a></li>
+                    
+                    
+                    
+                        <li><a href='/2019/02/12/jekyll-settings.html'>Jekyll Settings</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            <li class='has-sub'>
+                <a href='#'>tag</a>
+                <ul>
+                    
+                    
+                    
+                        <li><a href='/tags/jekyll/'>Jekyll</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/tips/'>Tips</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/markdown/'>Markdown</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/example/'>Example</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/welcome/'>Welcome</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+    
+
+    <header class="g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover"
+        data-theme="default">
+        <div class="post-wrapper">
+            <div class="post-tags">
+                
+                
+                <a href="/tags/lorem/" class="post-tag">lorem</a>
+                
+                
+            </div>
+            <h1>Et iam sedens levavit</h1>
+            
+            <div class="post-meta">
+                <span class="post-meta-item"><i class="far fa-user-circle"></i> Unknown IT</span>
+                <span class="post-meta-item"><i class="far fa-clock"></i>
+                    <time datetime="19-01-01">01 Jan 2019</time>
+                </span>
+                <span class="post-meta-item">
+                    <a href="https://github.com/Powershell-du-Zero/jekyll-theme-pdz/blob/master/_posts/2019-01-01-et-iam-sedens-levavit.md">
+                        <i class="fab fa-github"></i> Modifier cette page
+                    </a>
+                </span>
+            </div>
+        </div>
+        
+        <div class="filter"></div>
+        <div class="post-cover" style="background: url('/uploads/header-05-cover.jpg') center no-repeat; background-size: cover;"></div>
+        
+    </header>
+
+    <div class="post-content visible"><div class="toc-container">
+            <div class="side-toc">
+                <h3 class="title">
+                    <a class="toc-toggle" href="#">Dans cet article</a>
+                </h3>
+                <ul class="toc-body"></ul>
+            </div>
+        </div>
+        
+        
+        <article class="markdown-body">
+            <p>Lorem markdownum iuvenci egens, iudicis! Rogos in fidis creatis decipere
+momentaque fronte tutus spectator membra Cyllenius vita altis cum secus reverti
+facite. Et lacrimis Naides tu nova te luctibus, mandata inpune,
+quin!</p>
+
+<blockquote>
+  <p>Rapta magis antra uvis lenta et viasque anguesque praelata tristis iactas,
+natus grata ab quo perque furit. Proximus ille pondere terris. Est nube Echo
+cum graviore nostra, petendo Nox et fervet, densa! Canibus illa tortum insania
+loquor, aequore tacetve velox ut occulte qualis simulacra cyclopum? Et
+mortalia adigitque currat nocuit tauros vincere et oculos, non
+arcem.</p>
+</blockquote>
+
+<p>Gestet perhorruit premunt sacra tamen secretasque coniugis <strong>quoque</strong>, pectore,
+imbri. In sensit vultus naribus, <strong>tenet Saturnus a</strong> mores totus vepre comes
+montibus. Census quo pennis servitura, et plausu posuere maiores media lumine
+reversurum ore tenues forti cetera poplite. Spectans per origine viris, nec fele
+argumentum agmine sceptra animas dubie visi, Quid magnum.</p>
+
+<blockquote>
+  <p>Leve siqua sed, altera sed diversa et tollit experientis tigno. Adsimilare
+pestifer surgente terraeque Cephisius levis tibi fluctus te Aeolides ossaque,
+vicerat. Quod ore poenae) dis, sensit bene illo,
+villae, meque vero sine, recentes postera?</p>
+</blockquote>
+
+<h2 id="volucris-fuerat">Volucris fuerat</h2>
+
+<p>Paulatim lasso mota urbe indignave transcribere iniqui tacito fata ibi ait matre
+<em>ore lacertis litora</em> poscis. Virgo dixit! Odium quos virgae, quaterque, agit
+prius posse citra: sibi.</p>
+
+<ul>
+  <li>Nec ubi Alba nova inde</li>
+  <li>Fuit paulatim et curvavit adire pietatis exitium</li>
+  <li>Lacus quem</li>
+</ul>
+
+<p>Poscere iam vires <em>insultavere</em> certo phoenica, casus quae iugum aliquis:
+sororem quae montes. Oras arbore dea, ad remorata munitos, et mora subsidere
+aliudve fuit, quae haec dum tamen Themis. Virgine cupidine bracchia matri qui
+temptem patet.</p>
+
+<ul>
+  <li>Sui sed donec et veteres densas et</li>
+  <li>Coniunx expulit</li>
+  <li>Ab lucentis ingeniis et profuit lactantia operum</li>
+  <li>Continuam pugnae</li>
+  <li>Est tamen</li>
+</ul>
+
+<p>Praestat relicta, nostro ire, scelus oritur, fronde <strong>minimae clara</strong> hae nepos,
+seu tales torta longaque quae! Captus vineta praestans quoque,
+consequar matre cursu sentit Pindo.</p>
+
+<h2 id="altoque-dum-nuntiet-minetur">Altoque dum nuntiet minetur</h2>
+
+<p>Lorem markdownum et invidet undas, et gelidi Semiramio abditus timui spectatas
+peregit. Et ipse cultus ostendere interque; est ille mora: tamen <em>anguis</em>,
+innixus respondit placido.</p>
+
+<ol>
+  <li>Passaque tempore patens altera Perseidos cognovi</li>
+  <li>Marathon committi subito est eodem inhospita erroribus</li>
+  <li>Comitavit quae narret</li>
+</ol>
+
+<h3 id="melaneus-movebere-a-verba-totumque-huc-rauco">Melaneus movebere a verba totumque huc rauco</h3>
+
+<p>Fuit addendum iuvenis haec cubile reddita nec oneri, os dixit
+pictis quae paterni sidereis? Inlaesas rector et fuso.
+<strong>Vero</strong> ait mando norant; per tibi dixerat, quodcumque correpti somnia
+Proteaque fila vidit geminis unde, et carebunt. Limenque me quas dotem terrae,
+dolet utque cedere fudit <em>exempla tecta</em>, removit tela propinquae morique harpe
+remos.</p>
+
+<h3 id="in-nubila-faventum-et-comitem">In nubila faventum et comitem</h3>
+
+<p>Rapuere nam <em>ignibus</em>, ut latere membra specularer et illa. Nefanda patris.
+Prodit iam exitus trahit tecta, ipse visus texerat esse tradita!</p>
+
+<ol>
+  <li>Artus certamine in hanc</li>
+  <li>Fraxinus murmur iustius nutrix liquida vidit</li>
+  <li>Sub monte Helicona verumtamen in temerare ad</li>
+  <li>Imagine posse</li>
+</ol>
+
+<h2 id="texerat-fortissime-messes">Texerat fortissime messes</h2>
+
+<p>Nec nil amas <em>mitra ad</em> abesse dederat et pro bello. Et habet Oeclides abit
+dixit testis iras, silentia Achilles pedem palmiferos ostro quater aut tacetve
+vincla. Nautae quem, olivae Ilios sume densus, nostri
+praemia tendit, hic aureae, mactatae terra. Dilectaque sine!
+Tenuit arcus mihi ebori, <strong>spargere</strong> mihi ad, opus lenimen, sic agit, puer
+canendo.</p>
+
+<ol>
+  <li>Regia scindunt regis non cruentum quoque</li>
+  <li>Turba bella gerens tamquam forte iuveni vulnere</li>
+  <li>Rus proiecto ignifero</li>
+  <li>Hospes tangit colebat</li>
+  <li>De alium ex aequor</li>
+  <li>Trahat in meae</li>
+</ol>
+
+<p>Voco bene, morsu dolor, Ne Cinyphii imitatur fruges suos? Philomela tantum. Os
+subit ingenio nunc regis; centum sacra fortius, senecta inhonoratae tamen in
+inquit pectus formamque ipsos metuit.</p>
+
+        </article>
+    </div>
+
+    <section class="author-detail">
+        <section class="post-footer-item author-card">
+            <div class="avatar">
+                <img src="/uploads/avatar-unknown-it.jpg" alt="avatar">
+            </div>
+            <div class="author-name" rel="author">Unknown IT</div>
+            <div class="bio">
+                <p>You can't see me, yet I'm there</p>
+            </div>
+            
+        </section>
+        <section class="post-footer-item read-next">
+            
+            <div class="read-next-item">
+                <a href="/2019/01/02/ramos-solum-nec-Iove-igni.html" class="read-next-link"></a>
+                <section>
+                    <span>Ramos solum nec Iove igni</span>
+                    <p>Lorem markdownum vulgi nec nebulas viribus; fere Aiacem v...</p>
+                </section>
+                
+                <div class="filter"></div>
+                <img src="/uploads/header-05-preview.jpg" alt="Ramos solum nec Iove igni">
+                
+            </div>
+            
+
+            
+        </section><section class="post-footer-item comment">
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = '/2019/01/01/et-iam-sedens-levavit.html';
+            this.page.identifier = '/2019/01/01/et-iam-sedens-levavit.html';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section></section>
+
+    <footer class="g-footer">
+  <section>PowerShell du Zéro ©
+  
+  
+    2018
+    -
+  
+  2019
+  </section>
+  <section>Powered by <a href="//jekyllrb.com">Jekyll</a></section>
+</footer>
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-133213587-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+
+
+    <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/index.min.js"></script><script src="/assets/js/nav.min.js"></script>
+    <script src="/assets/js/toc.min.js"></script></body>
+</html>

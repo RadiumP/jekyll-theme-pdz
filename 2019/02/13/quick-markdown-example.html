@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Basic -->
+    <title>Quick Markdown Example - PowerShell du Zéro</title>
+    <meta name="author" content="Thomas ILLIET">
+    <meta name="description" content="Quick Markdown Example">
+    <meta name="keywords" content="jekyll, markdown, example">
+    <link rel="icon" href="/assets/img/favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Quick Markdown Example - PowerShell du Zéro">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:description" content="Jekyll theme for my organization">
+    <meta property="og:site_name" content="PowerShell du Zéro">
+    <meta property="og:image" content="/uploads/header-03-preview.jpg" />
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="article:published_time" content="2019-02-13 00:00:00 +0000">
+    <meta property="article:tag" content="jekyll"><meta property="article:tag" content="markdown"><meta property="article:tag" content="example">
+
+    <!-- Responsive  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="PDZ">
+    <link rel="apple-touch-icon" href="/assets/img/logo-apple.png" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/github-markdown.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+
+    <!-- Javascript -->
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+
+    <style>
+    .markdown-body .anchor{
+        float: left;
+        margin-top: -8px;
+        margin-left: -20px;
+        padding-right: 4px;
+        line-height: 1;
+        opacity: 0;
+    }
+
+    .markdown-body .anchor .anchor-icon{
+        font-size: 15px
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        let nodes = document.querySelector(".markdown-body").querySelectorAll("h1,h2,h3")
+        for(let node of nodes) {
+            var anchor = document.createElement("a")
+            var anchorIcon = document.createElement("i")
+            anchorIcon.setAttribute("class", "fa fa-anchor fa-lg anchor-icon")
+            anchorIcon.setAttribute("aria-hidden", true)
+            anchor.setAttribute("class", "anchor")
+            anchor.setAttribute("href", "#" + node.getAttribute("id"))
+
+            anchor.onmouseover = function() {
+                this.style.opacity = "0.4"
+            }
+
+            anchor.onmouseout = function() {
+                this.style.opacity = "0"
+            }
+
+            anchor.appendChild(anchorIcon)
+            node.appendChild(anchor)
+        }
+    })
+</script>
+
+</head>
+
+
+<body>
+    <header class="g-header">
+    <div class="g-logo">
+        <a href="/"></a>
+    </div>
+    <nav class="g-nav">
+        <ul>
+            
+            
+            <li><a href='/'>home</a></li>
+            
+            
+            <li class='has-sub'>
+                <a href='#'>article</a>
+                <ul>
+                    
+                    
+                    
+                        <li><a href='/2019/02/14/welcome-to-jekyll.html'>Welcome to Jekyll!</a></li>
+                    
+                    
+                    
+                        <li><a href='/2019/02/13/quick-markdown-example.html'>Markdown Example</a></li>
+                    
+                    
+                    
+                        <li><a href='/2019/02/12/jekyll-settings.html'>Jekyll Settings</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            <li class='has-sub'>
+                <a href='#'>tag</a>
+                <ul>
+                    
+                    
+                    
+                        <li><a href='/tags/jekyll/'>Jekyll</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/tips/'>Tips</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/markdown/'>Markdown</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/example/'>Example</a></li>
+                    
+                    
+                    
+                        <li><a href='/tags/welcome/'>Welcome</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+    
+
+    <header class="g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover"
+        data-theme="default">
+        <div class="post-wrapper">
+            <div class="post-tags">
+                
+                
+                <a href="/tags/jekyll/" class="post-tag">jekyll</a>
+                
+                <a href="/tags/markdown/" class="post-tag">markdown</a>
+                
+                <a href="/tags/example/" class="post-tag">example</a>
+                
+                
+            </div>
+            <h1>Quick Markdown Example</h1>
+            
+            <div class="post-meta">
+                <span class="post-meta-item"><i class="far fa-user-circle"></i> Thomas ILLIET</span>
+                <span class="post-meta-item"><i class="far fa-clock"></i>
+                    <time datetime="19-02-13">13 Feb 2019</time>
+                </span>
+                <span class="post-meta-item">
+                    <a href="https://github.com/Powershell-du-Zero/jekyll-theme-pdz/blob/master/_posts/2019-02-13-quick-markdown-example.md">
+                        <i class="fab fa-github"></i> Modifier cette page
+                    </a>
+                </span>
+            </div>
+        </div>
+        
+        <div class="filter"></div>
+        <div class="post-cover" style="background: url('/uploads/header-03-cover.jpg') center no-repeat; background-size: cover;"></div>
+        
+    </header>
+
+    <div class="post-content visible"><div class="toc-container">
+            <div class="side-toc">
+                <h3 class="title">
+                    <a class="toc-toggle" href="#">Dans cet article</a>
+                </h3>
+                <ul class="toc-body"></ul>
+            </div>
+        </div>
+        
+        
+        <article class="markdown-body">
+            <p>This is designed as a quick reference and allows you to easily configure your jekyll website.</p>
+
+<h1 id="h1-heading">h1 Heading</h1>
+<h2 id="h2-heading">h2 Heading</h2>
+<h3 id="h3-heading">h3 Heading</h3>
+<h4 id="h4-heading">h4 Heading</h4>
+<h5 id="h5-heading">h5 Heading</h5>
+<h6 id="h6-heading">h6 Heading</h6>
+
+<h2 id="horizontal-rules">Horizontal Rules</h2>
+
+<hr />
+
+<hr />
+
+<hr />
+
+<h2 id="emphasis">Emphasis</h2>
+
+<p><strong>This is bold text</strong></p>
+
+<p><strong>This is bold text</strong></p>
+
+<p><em>This is italic text</em></p>
+
+<p><em>This is italic text</em></p>
+
+<p><del>Strikethrough</del></p>
+
+<h2 id="blockquotes">Blockquotes</h2>
+
+<blockquote>
+  <p>Blockquotes can also be nested…</p>
+  <blockquote>
+    <p>…by using additional greater-than signs right next to each other…</p>
+    <blockquote>
+      <p>…or with spaces between arrows.</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h2 id="lists">Lists</h2>
+
+<p>Unordered</p>
+
+<ul>
+  <li>Create a list by starting a line with <code class="highlighter-rouge">+</code>, <code class="highlighter-rouge">-</code>, or <code class="highlighter-rouge">*</code></li>
+  <li>Sub-lists are made by indenting 2 spaces:
+    <ul>
+      <li>Marker character change forces new list start:
+        <ul>
+          <li>Ac tristique libero volutpat at</li>
+          <li>Facilisis in pretium nisl aliquet</li>
+          <li>Nulla volutpat aliquam velit</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Very easy!</li>
+</ul>
+
+<p>Ordered</p>
+
+<ol>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>You can use sequential numbers…</li>
+  <li>…or keep all the numbers as <code class="highlighter-rouge">1.</code></li>
+</ol>
+
+<h2 id="code">Code</h2>
+
+<p>Inline <code class="highlighter-rouge">code</code></p>
+
+<p>Block code “fences”</p>
+
+<pre><code class="language-no-highlight">Sample text here...
+</code></pre>
+
+<p>Syntax highlighting</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">bar</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">bar</span><span class="o">++</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">foo</span><span class="p">(</span><span class="mi">5</span><span class="p">));</span>
+</code></pre></div></div>
+
+<h2 id="tables">Tables</h2>
+
+<p>Tables aren’t part of the core Markdown spec, but they are part of GFM and <em>Markdown Here</em> supports them. They are an easy way of adding tables to your email – a task that would otherwise require copy-pasting from another application.</p>
+
+<pre><code class="language-no-highlight">Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes | are optional, and you don't need to make the
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+</code></pre>
+
+<p>Colons can be used to align columns.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tables</th>
+      <th style="text-align: center">Are</th>
+      <th style="text-align: right">Cool</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>col 3 is</td>
+      <td style="text-align: center">right-aligned</td>
+      <td style="text-align: right">$1600</td>
+    </tr>
+    <tr>
+      <td>col 2 is</td>
+      <td style="text-align: center">centered</td>
+      <td style="text-align: right">$12</td>
+    </tr>
+    <tr>
+      <td>zebra stripes</td>
+      <td style="text-align: center">are neat</td>
+      <td style="text-align: right">$1</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>There must be at least 3 dashes separating each header cell. The outer pipes</td>
+      <td>are optional, and you don’t need to make the raw Markdown line up prettily. You can also use inline Markdown.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>Less</th>
+      <th>Pretty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>Still</em></td>
+      <td><code class="highlighter-rouge">renders</code></td>
+      <td><strong>nicely</strong></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+        </article>
+    </div>
+
+    <section class="author-detail">
+        <section class="post-footer-item author-card">
+            <div class="avatar">
+                <img src="/uploads/avatar-thomas-illiet.jpg" alt="avatar">
+            </div>
+            <div class="author-name" rel="author">Thomas ILLIET</div>
+            <div class="bio">
+                <p>DevOps Engineer | Speaker | Blogger | PowerShell Advocate</p>
+            </div>
+            
+            <ul id="social-links" class="social-links">
+                
+                <li>
+                    <a href="https://twitter.com/thomas_illiet" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/thomas-illiet" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://www.linkedin.com/in/thomas-illiet/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </section>
+        <section class="post-footer-item read-next">
+            
+            <div class="read-next-item">
+                <a href="/2019/02/14/welcome-to-jekyll.html" class="read-next-link"></a>
+                <section>
+                    <span>Welcome to Jekyll!</span>
+                    <p>You’ll find this post in your _posts directory. Go ahead ...</p>
+                </section>
+                
+                <div class="filter"></div>
+                <img src="/uploads/header-02-preview.jpg" alt="Welcome to Jekyll!">
+                
+            </div>
+            
+
+            
+            <div class="read-next-item">
+                <a href="/2019/02/12/jekyll-settings.html" class="read-next-link"></a>
+                <section>
+                    <span>Jekyll Settings</span>
+                    <p>Here’s a handy guide to easily setting up your Jekyll web...</p>
+                </section>
+                
+                <div class="filter"></div>
+                <img src="/uploads/header-04-preview.jpg" alt="Jekyll Settings">
+                
+            </div>
+            
+        </section><section class="post-footer-item comment">
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = '/2019/02/13/quick-markdown-example.html';
+            this.page.identifier = '/2019/02/13/quick-markdown-example.html';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section></section>
+
+    <footer class="g-footer">
+  <section>PowerShell du Zéro ©
+  
+  
+    2018
+    -
+  
+  2019
+  </section>
+  <section>Powered by <a href="//jekyllrb.com">Jekyll</a></section>
+</footer>
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-133213587-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+
+
+    <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/index.min.js"></script><script src="/assets/js/nav.min.js"></script>
+    <script src="/assets/js/toc.min.js"></script></body>
+</html>

@@ -3,8 +3,8 @@ layout: post
 title: Et iam sedens levavit
 date: 2019-01-01
 author-id: 2
-post-cover: /demo/img/header-05-cover.jpg
-preview-cover: /demo/img/header-05-preview.jpg
+post-cover: /uploads/header-05-cover.jpg
+preview-cover: /uploads/header-05-preview.jpg
 tags: lorem
 ---
 
